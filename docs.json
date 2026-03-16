@@ -70,19 +70,10 @@
                 ]
               },
               {
-                "group": "PMS/키오스크/하드웨어 연동",
-                "expanded": false,
-                "pages": [
-                  "ko/use-cases/pms-kiosk-hardware/pms-room-management",
-                  "ko/use-cases/pms-kiosk-hardware/unmanned-checkin-system"
-                ]
-              },
-              {
                 "group": "운영 자동화/효율화",
                 "expanded": false,
                 "pages": [
-                  "ko/use-cases/operations-automation/night-unmanned-operations",
-                  "ko/use-cases/operations-automation/staff-task-automation"
+                  "ko/use-cases/operations-automation/night-unmanned-operations"
                 ]
               },
               {
@@ -134,13 +125,6 @@
                 "expanded": false,
                 "pages": [
                   "ko/use-cases/multi-property-accounts/multi-property-management"
-                ]
-              },
-              {
-                "group": "고객 커뮤니케이션",
-                "expanded": false,
-                "pages": [
-                  "ko/use-cases/customer-communication/auto-message-system"
                 ]
               },
               {
