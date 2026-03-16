@@ -14,130 +14,142 @@
   },
   "favicon": "/logo/favicon.svg",
   "navigation": {
-    "tabs": [
+    "languages": [
       {
-        "tab": "활용 사례",
-        "groups": [
+        "language": "ko",
+        "tabs": [
           {
-            "group": "요금/가격 관리",
-            "expanded": true,
-            "pages": [
-              "ko/use-cases/pricing-management/seasonal-pricing",
-              "ko/use-cases/pricing-management/channel-commission-pricing",
-              "ko/use-cases/pricing-management/bulk-rate-adjustment"
-            ]
-          },
-          {
-            "group": "재고/객실 가용성 관리",
-            "expanded": false,
-            "pages": [
-              "ko/use-cases/inventory-management/channel-inventory-sync",
-              "ko/use-cases/inventory-management/room-close-open-automation"
-            ]
-          },
-          {
-            "group": "채널 통합 관리",
-            "expanded": false,
-            "pages": [
-              "ko/use-cases/channel-management/multi-channel-integration",
-              "ko/use-cases/channel-management/channel-product-visibility"
-            ]
-          },
-          {
-            "group": "예약 관리",
-            "expanded": false,
-            "pages": [
-              "ko/use-cases/reservation-management/reservation-change-cancel",
-              "ko/use-cases/reservation-management/multi-night-group-booking"
-            ]
-          },
-          {
-            "group": "객실 타입/상품 설정",
-            "expanded": false,
-            "pages": [
-              "ko/use-cases/room-product-config/room-type-pricing-strategy",
-              "ko/use-cases/room-product-config/package-product-management"
-            ]
-          },
-          {
-            "group": "PMS/키오스크/하드웨어 연동",
-            "expanded": false,
-            "pages": [
-              "ko/use-cases/pms-kiosk-hardware/pms-room-management",
-              "ko/use-cases/pms-kiosk-hardware/unmanned-checkin-system"
-            ]
-          },
-          {
-            "group": "운영 자동화/효율화",
-            "expanded": false,
-            "pages": [
-              "ko/use-cases/operations-automation/night-unmanned-operations",
-              "ko/use-cases/operations-automation/staff-task-automation"
-            ]
-          },
-          {
-            "group": "대실/입퇴실 시간 관리",
-            "expanded": false,
-            "pages": [
-              "ko/use-cases/dayuse-checkin-time/dayuse-optimization",
-              "ko/use-cases/dayuse-checkin-time/flexible-checkin-checkout"
-            ]
-          },
-          {
-            "group": "특정 채널 운영",
-            "expanded": false,
-            "pages": [
-              "ko/use-cases/specific-channel-ops/naver-yanolja-tips"
-            ]
-          },
-          {
-            "group": "프로모션/특가 운영",
-            "expanded": false,
-            "pages": [
-              "ko/use-cases/promotions-special-offers/seasonal-promotion-ops",
-              "ko/use-cases/promotions-special-offers/walk-in-special-deals"
-            ]
-          },
-          {
-            "group": "수기/직접 예약 관리",
-            "expanded": false,
-            "pages": [
-              "ko/use-cases/manual-direct-booking/manual-booking-inventory-sync"
-            ]
-          },
-          {
-            "group": "온보딩/시스템 설정",
-            "expanded": false,
-            "pages": [
-              "ko/use-cases/onboarding-setup/vcms-initial-setup"
-            ]
-          },
-          {
-            "group": "오버부킹 방지/처리",
-            "expanded": false,
-            "pages": [
-              "ko/use-cases/overbooking-prevention/overbooking-prevention-setup"
-            ]
-          },
-          {
-            "group": "다지점/사용자 관리",
-            "expanded": false,
-            "pages": [
-              "ko/use-cases/multi-property-accounts/multi-property-management"
-            ]
-          },
-          {
-            "group": "고객 커뮤니케이션",
-            "expanded": false,
-            "pages": [
-              "ko/use-cases/customer-communication/auto-message-system"
-            ]
-          },
-          {
-            "group": "정산/매출 리포트",
-            "expanded": false,
-            "pages": [
-              "ko/use-cases/settlement-reports/channel-settlement-reports"
+            "tab": "활용 사례",
+            "groups": [
+              {
+                "group": "개요",
+                "expanded": true,
+                "pages": [
+                  "ko/use-cases/index"
+                ]
+              },
+              {
+                "group": "요금/가격 관리",
+                "expanded": true,
+                "pages": [
+                  "ko/use-cases/pricing-management/seasonal-pricing",
+                  "ko/use-cases/pricing-management/channel-commission-pricing",
+                  "ko/use-cases/pricing-management/bulk-rate-adjustment"
+                ]
+              },
+              {
+                "group": "재고/객실 가용성 관리",
+                "expanded": false,
+                "pages": [
+                  "ko/use-cases/inventory-management/channel-inventory-sync",
+                  "ko/use-cases/inventory-management/room-close-open-automation"
+                ]
+              },
+              {
+                "group": "채널 통합 관리",
+                "expanded": false,
+                "pages": [
+                  "ko/use-cases/channel-management/multi-channel-integration",
+                  "ko/use-cases/channel-management/channel-product-visibility"
+                ]
+              },
+              {
+                "group": "예약 관리",
+                "expanded": false,
+                "pages": [
+                  "ko/use-cases/reservation-management/reservation-change-cancel",
+                  "ko/use-cases/reservation-management/multi-night-group-booking"
+                ]
+              },
+              {
+                "group": "객실 타입/상품 설정",
+                "expanded": false,
+                "pages": [
+                  "ko/use-cases/room-product-config/room-type-pricing-strategy",
+                  "ko/use-cases/room-product-config/package-product-management"
+                ]
+              },
+              {
+                "group": "PMS/키오스크/하드웨어 연동",
+                "expanded": false,
+                "pages": [
+                  "ko/use-cases/pms-kiosk-hardware/pms-room-management",
+                  "ko/use-cases/pms-kiosk-hardware/unmanned-checkin-system"
+                ]
+              },
+              {
+                "group": "운영 자동화/효율화",
+                "expanded": false,
+                "pages": [
+                  "ko/use-cases/operations-automation/night-unmanned-operations",
+                  "ko/use-cases/operations-automation/staff-task-automation"
+                ]
+              },
+              {
+                "group": "대실/입퇴실 시간 관리",
+                "expanded": false,
+                "pages": [
+                  "ko/use-cases/dayuse-checkin-time/dayuse-optimization",
+                  "ko/use-cases/dayuse-checkin-time/flexible-checkin-checkout"
+                ]
+              },
+              {
+                "group": "특정 채널 운영",
+                "expanded": false,
+                "pages": [
+                  "ko/use-cases/specific-channel-ops/naver-yanolja-tips"
+                ]
+              },
+              {
+                "group": "프로모션/특가 운영",
+                "expanded": false,
+                "pages": [
+                  "ko/use-cases/promotions-special-offers/seasonal-promotion-ops",
+                  "ko/use-cases/promotions-special-offers/walk-in-special-deals"
+                ]
+              },
+              {
+                "group": "수기/직접 예약 관리",
+                "expanded": false,
+                "pages": [
+                  "ko/use-cases/manual-direct-booking/manual-booking-inventory-sync"
+                ]
+              },
+              {
+                "group": "온보딩/시스템 설정",
+                "expanded": false,
+                "pages": [
+                  "ko/use-cases/onboarding-setup/vcms-initial-setup"
+                ]
+              },
+              {
+                "group": "오버부킹 방지/처리",
+                "expanded": false,
+                "pages": [
+                  "ko/use-cases/overbooking-prevention/overbooking-prevention-setup"
+                ]
+              },
+              {
+                "group": "다지점/사용자 관리",
+                "expanded": false,
+                "pages": [
+                  "ko/use-cases/multi-property-accounts/multi-property-management"
+                ]
+              },
+              {
+                "group": "고객 커뮤니케이션",
+                "expanded": false,
+                "pages": [
+                  "ko/use-cases/customer-communication/auto-message-system"
+                ]
+              },
+              {
+                "group": "정산/매출 리포트",
+                "expanded": false,
+                "pages": [
+                  "ko/use-cases/settlement-reports/channel-settlement-reports"
+                ]
+              }
             ]
           }
         ]
