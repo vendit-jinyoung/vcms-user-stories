@@ -1,7 +1,8 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "VCMS 사용자 가이드",
+  "name": "VCMS 활용 사례",
+  "description": "VOC 기반 VCMS 활용 사례 — 숙박업소 운영 문제를 VCMS로 해결하는 방법",
   "colors": {
     "primary": "#5D21D4",
     "light": "#646A78",
@@ -13,357 +14,147 @@
   },
   "favicon": "/logo/favicon.svg",
   "navigation": {
-    "languages": [
+    "tabs": [
       {
-        "language": "ko",
-        "tabs": [
+        "tab": "활용 사례",
+        "groups": [
           {
-            "tab": "사용자 가이드",
-            "groups": [
-              {
-                "group": "숙박업소 관리",
-                "expanded": true,
-                "pages": [
-                  "ko/accommodation/signup-login",
-                  "ko/accommodation/create-accommodation",
-                  "ko/accommodation/invite-user",
-                  "ko/accommodation/accommodation-setting"
-                ]
-              },
-              {
-                "group": "판매 관리",
-                "expanded": true,
-                "pages": [
-                  "ko/distributions/understanding",
-                  "ko/distributions/usage",
-                  "ko/distributions/channel-sync",
-                  "ko/distributions/view-setting"
-                ]
-              },
-              {
-                "group": "예약",
-                "expanded": true,
-                "pages": [
-                  "ko/bookings/bookings"
-                ]
-              },
-              {
-                "group": "설정",
-                "expanded": false,
-                "pages": [
-                  "ko/inventory-rate/roomType",
-                  "ko/inventory-rate/package-stay",
-                  "ko/inventory-rate/package-day-use",
-                  "ko/inventory-rate/period",
-                  "ko/inventory-rate/rate",
-                  "ko/inventory-rate/inclusion",
-                  "ko/inventory-rate/timetable"
-                ]
-              },
-              {
-                "group": "채널",
-                "expanded": false,
-                "pages": [
-                  {
-                    "group": "채널 설정",
-                    "expanded": false,
-                    "pages": [
-                      "ko/channels/channel-setting"
-                    ]
-                  },
-                  {
-                    "group": "채널별 특이사항",
-                    "expanded": false,
-                    "pages": [
-                      "ko/channels/agoda",
-                      "ko/channels/tripdotcom",
-                      "ko/channels/naver",
-                      "ko/channels/airbnb"
-                    ]
-                  }
-                ]
-              },
-              {
-                "group": "연동 서비스",
-                "expanded": false,
-                "pages": [
-                  "ko/integrations/vcloud"
-                ]
-              },
-              {
-                "group": "구독",
-                "expanded": false,
-                "pages": [
-                  "ko/billing/billing"
-                ]
-              },
-              {
-                "group": "Reference",
-                "expanded": true,
-                "pages": [
-                  "ko/reference/terms-conditions",
-                  "ko/reference/privacy-policy",
-                  "ko/reference/personal-information-consent"
-                ]
-              }
+            "group": "요금/가격 관리",
+            "expanded": true,
+            "pages": [
+              "ko/use-cases/pricing-management/seasonal-pricing",
+              "ko/use-cases/pricing-management/channel-commission-pricing",
+              "ko/use-cases/pricing-management/bulk-rate-adjustment"
             ]
           },
           {
-            "tab": "자주 묻는 질문",
-            "groups": [
-              {
-                "group": "재고·요금",
-                "expanded": true,
-                "pages": [
-                  "ko/faq/usage/day-use-inventory-rate",
-                  "ko/faq/inventory-rate/bulk-edit-period-inventory",
-                  "ko/faq/inventory-rate/bulk-period-rate-adjustment",
-                  "ko/faq/inventory-rate/timetables",
-                  "ko/faq/inventory-rate/change-room-count",
-                  "ko/faq/inventory-rate/move-room-to-other-type",
-                  "ko/faq/inventory-rate/limit-inventory-by-channel",
-                  "ko/faq/inventory-rate/daily-chek-in-out-time"
-                ]
-              },
-              {
-                "group": "채널",
-                "expanded": false,
-                "pages": [
-                  "ko/faq/channels/available-channels",
-                  "ko/faq/channels/channel-final-rate",
-                  "ko/faq/channels/channel-inventory-rate-setting",
-                  "ko/faq/channels/channels-commission-setting",
-                  "ko/faq/channels/max-sync-days",
-                  "ko/faq/channels/yanolja-hotdeal-goldclass",
-                  "ko/faq/channels/connect-airbnb-without-naver"
-                ]
-              },
-              {
-                "group": "구독",
-                "expanded": false,
-                "pages": [
-                  "ko/faq/billing/add-payment-card",
-                  "ko/faq/billing/default-card-setting"
-                ]
-              },
-              {
-                "group": "문제 해결",
-                "expanded": false,
-                "pages": [
-                  "ko/faq/issue/vcloud-booking-not-synced",
-                  "ko/faq/issue/yanolja-booking-delay"
-                ]
-              },
-              {
-                "group": "사용 방법",
-                "expanded": false,
-                "pages": [
-                  "ko/faq/usage/booking-sync-free",
-                  "ko/faq/usage/use-on-mobile",
-                  "ko/faq/usage/cancel-booking-in-vcms"
-                ]
-              },
-              {
-                "group": "연동 서비스",
-                "expanded": false,
-                "pages": [
-                  "ko/faq/integrations/use-with-vcloud"
-                ]
-              },
-              {
-                "group": "계정",
-                "expanded": false,
-                "pages": [
-                  "ko/faq/account/verification-code-not-received"
-                ]
-              },
-              {
-                "group": "Reference",
-                "expanded": true,
-                "pages": [
-                  "ko/reference/terms-conditions",
-                  "ko/reference/privacy-policy",
-                  "ko/reference/personal-information-consent"
-                ]
-              }
+            "group": "재고/객실 가용성 관리",
+            "expanded": false,
+            "pages": [
+              "ko/use-cases/inventory-management/channel-inventory-sync",
+              "ko/use-cases/inventory-management/room-close-open-automation"
             ]
           },
           {
-            "tab": "활용 사례",
-            "groups": [
-              {
-                "group": "요금/가격 관리",
-                "expanded": true,
-                "pages": [
-                  "ko/use-cases/pricing-management/seasonal-pricing",
-                  "ko/use-cases/pricing-management/channel-commission-pricing",
-                  "ko/use-cases/pricing-management/bulk-rate-adjustment"
-                ]
-              },
-              {
-                "group": "재고/객실 가용성 관리",
-                "expanded": false,
-                "pages": [
-                  "ko/use-cases/inventory-management/channel-inventory-sync",
-                  "ko/use-cases/inventory-management/room-close-open-automation"
-                ]
-              },
-              {
-                "group": "채널 통합 관리",
-                "expanded": false,
-                "pages": [
-                  "ko/use-cases/channel-management/multi-channel-integration",
-                  "ko/use-cases/channel-management/channel-product-visibility"
-                ]
-              },
-              {
-                "group": "예약 관리",
-                "expanded": false,
-                "pages": [
-                  "ko/use-cases/reservation-management/reservation-change-cancel",
-                  "ko/use-cases/reservation-management/multi-night-group-booking"
-                ]
-              },
-              {
-                "group": "객실 타입/상품 설정",
-                "expanded": false,
-                "pages": [
-                  "ko/use-cases/room-product-config/room-type-pricing-strategy",
-                  "ko/use-cases/room-product-config/package-product-management"
-                ]
-              },
-              {
-                "group": "PMS/키오스크/하드웨어 연동",
-                "expanded": false,
-                "pages": [
-                  "ko/use-cases/pms-kiosk-hardware/pms-room-management",
-                  "ko/use-cases/pms-kiosk-hardware/unmanned-checkin-system"
-                ]
-              },
-              {
-                "group": "운영 자동화/효율화",
-                "expanded": false,
-                "pages": [
-                  "ko/use-cases/operations-automation/night-unmanned-operations",
-                  "ko/use-cases/operations-automation/staff-task-automation"
-                ]
-              },
-              {
-                "group": "대실/입퇴실 시간 관리",
-                "expanded": false,
-                "pages": [
-                  "ko/use-cases/dayuse-checkin-time/dayuse-optimization",
-                  "ko/use-cases/dayuse-checkin-time/flexible-checkin-checkout"
-                ]
-              },
-              {
-                "group": "특정 채널 운영",
-                "expanded": false,
-                "pages": [
-                  "ko/use-cases/specific-channel-ops/naver-yanolja-tips"
-                ]
-              },
-              {
-                "group": "프로모션/특가 운영",
-                "expanded": false,
-                "pages": [
-                  "ko/use-cases/promotions-special-offers/seasonal-promotion-ops",
-                  "ko/use-cases/promotions-special-offers/walk-in-special-deals"
-                ]
-              },
-              {
-                "group": "수기/직접 예약 관리",
-                "expanded": false,
-                "pages": [
-                  "ko/use-cases/manual-direct-booking/manual-booking-inventory-sync"
-                ]
-              },
-              {
-                "group": "온보딩/시스템 설정",
-                "expanded": false,
-                "pages": [
-                  "ko/use-cases/onboarding-setup/vcms-initial-setup"
-                ]
-              },
-              {
-                "group": "오버부킹 방지/처리",
-                "expanded": false,
-                "pages": [
-                  "ko/use-cases/overbooking-prevention/overbooking-prevention-setup"
-                ]
-              },
-              {
-                "group": "다지점/사용자 관리",
-                "expanded": false,
-                "pages": [
-                  "ko/use-cases/multi-property-accounts/multi-property-management"
-                ]
-              },
-              {
-                "group": "고객 커뮤니케이션",
-                "expanded": false,
-                "pages": [
-                  "ko/use-cases/customer-communication/auto-message-system"
-                ]
-              },
-              {
-                "group": "정산/매출 리포트",
-                "expanded": false,
-                "pages": [
-                  "ko/use-cases/settlement-reports/channel-settlement-reports"
-                ]
-              },
-              {
-                "group": "Reference",
-                "expanded": true,
-                "pages": [
-                  "ko/reference/terms-conditions",
-                  "ko/reference/privacy-policy",
-                  "ko/reference/personal-information-consent"
-                ]
-              }
+            "group": "채널 통합 관리",
+            "expanded": false,
+            "pages": [
+              "ko/use-cases/channel-management/multi-channel-integration",
+              "ko/use-cases/channel-management/channel-product-visibility"
             ]
           },
           {
-            "tab": "업데이트 노트",
-            "groups": [
-              {
-                "group": "2026",
-                "expanded": true,
-                "pages": [
-                  "ko/release-notes/2026-01-14"
-                ]
-              },
-              {
-                "group": "2025",
-                "expanded": true,
-                "pages": [
-                  "ko/release-notes/2025-12-23"
-                ]
-              }
+            "group": "예약 관리",
+            "expanded": false,
+            "pages": [
+              "ko/use-cases/reservation-management/reservation-change-cancel",
+              "ko/use-cases/reservation-management/multi-night-group-booking"
             ]
-          }
-        ]
-      },
-      {
-        "language": "en",
-        "tabs": [
+          },
           {
-            "tab": "User Guide",
-            "groups": [
-              {
-                "group": "Reference",
-                "expanded": true,
-                "pages": [
-                  "en/reference/terms-conditions",
-                  "en/reference/privacy-policy",
-                  "en/reference/personal-information-consent"
-                ]
-              }
+            "group": "객실 타입/상품 설정",
+            "expanded": false,
+            "pages": [
+              "ko/use-cases/room-product-config/room-type-pricing-strategy",
+              "ko/use-cases/room-product-config/package-product-management"
+            ]
+          },
+          {
+            "group": "PMS/키오스크/하드웨어 연동",
+            "expanded": false,
+            "pages": [
+              "ko/use-cases/pms-kiosk-hardware/pms-room-management",
+              "ko/use-cases/pms-kiosk-hardware/unmanned-checkin-system"
+            ]
+          },
+          {
+            "group": "운영 자동화/효율화",
+            "expanded": false,
+            "pages": [
+              "ko/use-cases/operations-automation/night-unmanned-operations",
+              "ko/use-cases/operations-automation/staff-task-automation"
+            ]
+          },
+          {
+            "group": "대실/입퇴실 시간 관리",
+            "expanded": false,
+            "pages": [
+              "ko/use-cases/dayuse-checkin-time/dayuse-optimization",
+              "ko/use-cases/dayuse-checkin-time/flexible-checkin-checkout"
+            ]
+          },
+          {
+            "group": "특정 채널 운영",
+            "expanded": false,
+            "pages": [
+              "ko/use-cases/specific-channel-ops/naver-yanolja-tips"
+            ]
+          },
+          {
+            "group": "프로모션/특가 운영",
+            "expanded": false,
+            "pages": [
+              "ko/use-cases/promotions-special-offers/seasonal-promotion-ops",
+              "ko/use-cases/promotions-special-offers/walk-in-special-deals"
+            ]
+          },
+          {
+            "group": "수기/직접 예약 관리",
+            "expanded": false,
+            "pages": [
+              "ko/use-cases/manual-direct-booking/manual-booking-inventory-sync"
+            ]
+          },
+          {
+            "group": "온보딩/시스템 설정",
+            "expanded": false,
+            "pages": [
+              "ko/use-cases/onboarding-setup/vcms-initial-setup"
+            ]
+          },
+          {
+            "group": "오버부킹 방지/처리",
+            "expanded": false,
+            "pages": [
+              "ko/use-cases/overbooking-prevention/overbooking-prevention-setup"
+            ]
+          },
+          {
+            "group": "다지점/사용자 관리",
+            "expanded": false,
+            "pages": [
+              "ko/use-cases/multi-property-accounts/multi-property-management"
+            ]
+          },
+          {
+            "group": "고객 커뮤니케이션",
+            "expanded": false,
+            "pages": [
+              "ko/use-cases/customer-communication/auto-message-system"
+            ]
+          },
+          {
+            "group": "정산/매출 리포트",
+            "expanded": false,
+            "pages": [
+              "ko/use-cases/settlement-reports/channel-settlement-reports"
             ]
           }
         ]
       }
     ]
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "GitHub",
+        "href": "https://github.com/vendit-jinyoung/vcms-user-stories"
+      }
+    ]
+  },
+  "footer": {
+    "socials": {
+      "github": "https://github.com/vendit-jinyoung"
+    }
   }
 }
