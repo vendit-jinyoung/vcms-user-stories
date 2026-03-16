@@ -19,7 +19,7 @@
         "language": "ko",
         "tabs": [
           {
-            "tab": "활용 사례",
+            "tab": "기능 안내",
             "groups": [
               {
                 "group": "개요",
@@ -133,6 +133,117 @@
                 "expanded": false,
                 "pages": [
                   "ko/use-cases/settlement-reports/channel-settlement-reports"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "활용 사례",
+            "groups": [
+              {
+                "group": "개요",
+                "expanded": true,
+                "pages": [
+                  "ko/stories/index"
+                ]
+              },
+              {
+                "group": "요금/가격 관리",
+                "expanded": true,
+                "pages": [
+                  "ko/stories/pricing-management/property-type-seasonality-story"
+                ]
+              },
+              {
+                "group": "재고/객실 가용성 관리",
+                "expanded": false,
+                "pages": [
+                  "ko/stories/inventory-management/overbooking-and-sync-story"
+                ]
+              },
+              {
+                "group": "채널 통합 관리",
+                "expanded": false,
+                "pages": [
+                  "ko/stories/channel-management/spreadsheet-to-hub-story"
+                ]
+              },
+              {
+                "group": "예약 관리",
+                "expanded": false,
+                "pages": [
+                  "ko/stories/reservation-management/change-cancel-chaos-story"
+                ]
+              },
+              {
+                "group": "객실 타입/상품 설정",
+                "expanded": false,
+                "pages": [
+                  "ko/stories/room-product-config/package-and-mapping-story"
+                ]
+              },
+              {
+                "group": "운영 자동화/효율화",
+                "expanded": false,
+                "pages": [
+                  "ko/stories/operations-automation/night-operations-story"
+                ]
+              },
+              {
+                "group": "대실/입퇴실 시간 관리",
+                "expanded": false,
+                "pages": [
+                  "ko/stories/dayuse-checkin-time/motel-dayuse-story"
+                ]
+              },
+              {
+                "group": "특정 채널 운영",
+                "expanded": false,
+                "pages": [
+                  "ko/stories/specific-channel-ops/channel-quirks-story"
+                ]
+              },
+              {
+                "group": "프로모션/특가 운영",
+                "expanded": false,
+                "pages": [
+                  "ko/stories/promotions-special-offers/promo-timing-story"
+                ]
+              },
+              {
+                "group": "수기/직접 예약 관리",
+                "expanded": false,
+                "pages": [
+                  "ko/stories/manual-direct-booking/vcloud-manual-booking-story"
+                ]
+              },
+              {
+                "group": "온보딩/시스템 설정",
+                "expanded": false,
+                "pages": [
+                  "ko/stories/onboarding-setup/first-30-days-story",
+                  "ko/stories/onboarding-setup/why-setup-feels-hard-story"
+                ]
+              },
+              {
+                "group": "오버부킹 방지/처리",
+                "expanded": false,
+                "pages": [
+                  "ko/stories/overbooking-prevention/overbooking-collapse-story"
+                ]
+              },
+              {
+                "group": "다지점/사용자 관리",
+                "expanded": false,
+                "pages": [
+                  "ko/stories/multi-property-accounts/owner-manager-frontdesk-story"
+                ]
+              },
+              {
+                "group": "정산/매출 리포트",
+                "expanded": false,
+                "pages": [
+                  "ko/stories/settlement-reports/margin-visibility-story"
                 ]
               }
             ]
