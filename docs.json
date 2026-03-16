@@ -110,7 +110,8 @@
                 "group": "온보딩/시스템 설정",
                 "expanded": false,
                 "pages": [
-                  "ko/use-cases/onboarding-setup/vcms-initial-setup"
+                  "ko/use-cases/onboarding-setup/vcms-initial-setup",
+                  "ko/use-cases/onboarding-setup/remote-support-troubleshooting"
                 ]
               },
               {
