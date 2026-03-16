@@ -1,0 +1,82 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "VCMS User Stories",
+  "description": "VCMS(Video CMS) 사용 사례 문서",
+  "colors": {
+    "primary": "#2563EB",
+    "light": "#60A5FA",
+    "dark": "#1E40AF"
+  },
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
+  },
+  "favicon": "/favicon.svg",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "User Stories",
+        "groups": [
+          {
+            "group": "Overview",
+            "icon": "book",
+            "pages": [
+              "index",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Content Management",
+            "icon": "film",
+            "pages": [
+              "stories/content/upload",
+              "stories/content/organize",
+              "stories/content/publish"
+            ]
+          },
+          {
+            "group": "User Management",
+            "icon": "users",
+            "pages": [
+              "stories/users/authentication",
+              "stories/users/roles"
+            ]
+          },
+          {
+            "group": "Analytics",
+            "icon": "chart-bar",
+            "pages": [
+              "stories/analytics/dashboard",
+              "stories/analytics/reports"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Changelog",
+        "groups": [
+          {
+            "group": "Updates",
+            "pages": [
+              "changelog"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "GitHub",
+        "href": "https://github.com/vendit-jinyoung/vcms-user-stories"
+      }
+    ]
+  },
+  "footer": {
+    "socials": {
+      "github": "https://github.com/vendit-jinyoung"
+    }
+  }
+}
