@@ -1,0 +1,102 @@
+/* ===========================================================
+   VENDIT 브랜드 컬러 (Light + Dark 공통 변수)
+   =========================================================== */
+:root {
+  --vendit-purple: #5D21D4;
+  --vendit-purple-bg: #F4ECFF;
+  --vendit-purple-active-bg: #EDE4FF;
+}
+
+/* ===========================================================
+   1) 링크 Hover / Active — 강제 보라색
+   =========================================================== */
+
+/* Hover */
+.mint-navigation-item > .mint-link:hover {
+  background-color: var(--vendit-purple-bg) !important;
+  color: var(--vendit-purple) !important;
+}
+
+/* Active */
+.mint-navigation-item > .mint-link.active,
+.mint-navigation-item > .mint-link.active * {
+  background-color: var(--vendit-purple-active-bg) !important;
+  color: var(--vendit-purple) !important;
+  font-weight: 600 !important;
+}
+
+/* 기본 링크 스타일 */
+.mint-navigation-item > .mint-link {
+  border-radius: 8px !important;
+  padding: 10px 14px !important;
+  transition: all 0.15s ease;
+}
+
+/* ===========================================================
+   2) 그룹 타이틀 보라색
+   =========================================================== */
+.mint-nav-group-title {
+  color: var(--vendit-purple) !important;
+  font-weight: 700 !important;
+}
+
+/* ===========================================================
+   3) 아코디언 — “채널 연결”, “자주 묻는 질문”만 열림 지원
+   =========================================================== */
+
+/* 모든 그룹 기본 닫힘 */
+.mint-nav-group .mint-nav-group-items {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.25s ease, opacity 0.2s ease;
+}
+
+/* 기본 토글 숨김 */
+.mint-nav-group .mint-nav-group-toggle {
+  display: none !important;
+}
+
+/* Mintlify 그룹에는 자동으로 data-group-title이 들어감 */
+.mint-nav-group[data-group-title="채널 연결"] .mint-nav-group-toggle,
+.mint-nav-group[data-group-title="자주 묻는 질문"] .mint-nav-group-toggle {
+  display: flex !important;
+}
+
+/* 열린 상태 */
+.mint-nav-group[data-expanded="true"] .mint-nav-group-items {
+  max-height: 500px !important;
+  opacity: 1 !important;
+}
+
+/* 화살표 */
+.mint-nav-group-toggle svg {
+  stroke: var(--vendit-purple) !important;
+  transition: transform 0.25s ease;
+}
+.mint-nav-group[data-expanded="true"] .mint-nav-group-toggle svg {
+  transform: rotate(90deg);
+}
+
+/* ===========================================================
+   4) 다크 모드
+   =========================================================== */
+@media (prefers-color-scheme: dark) {
+  .mint-navigation-item > .mint-link:hover {
+    background-color: #2E225E !important;
+    color: #D6C7FF !important;
+  }
+
+  .mint-navigation-item > .mint-link.active {
+    background-color: #3A2A66 !important;
+    color: #E6DEFF !important;
+  }
+
+  .mint-nav-group-title {
+    color: #D6C7FF !important;
+  }
+
+  .mint-nav-group-toggle svg {
+    stroke: #D6C7FF !important;
+  }
+}

@@ -1,3 +1,29 @@
 node_modules/
 .mintlify/
 .DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+*.egg-info/
+venv/
+.venv/
+
+# Environment
+.env
+.env.*
+
+# Data (large files, symlinks)
+data/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Sisyphus / Claude
+.sisyphus/
+.claude/

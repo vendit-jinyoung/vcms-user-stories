@@ -1,0 +1,109 @@
+{#-
+  Jinja2 template for VCMS use-case MDX pages (docs.vcms.io)
+  
+  Required variables:
+    - title: str           — 페이지 제목 (예: "채널 요금 불일치 해결")
+    - description: str     — 한 줄 요약 (예: "OTA 채널별 요금이 맞지 않을 때 VCMS로 해결하는 방법")
+    - situation: str       — 상황 설명 (Markdown)
+    - solution: str        — 해결 방법 (Markdown)
+    - target: str          — 대상 숙박업소 유형 (Markdown)
+    - benefit: str         — 기대 효과 (Markdown)
+  
+  Optional variables:
+    - sidebar_title: str   — 사이드바 표시용 짧은 제목
+    - icon: str            — Font Awesome / Lucide / Tabler 아이콘 이름
+    - steps: list[dict]    — 단계별 가이드 [{title: str, content: str}, ...]
+    - tips: list[str]      — 운영 팁 리스트
+    - related_guides: list[dict] — 관련 가이드 [{title: str, path: str}, ...]
+    - related_faq: list[dict]    — 관련 FAQ [{title: str, path: str}, ...]
+-#}
+---
+title: "{{ title }}"
+description: "{{ description }}"
+{%- if sidebar_title %}
+sidebarTitle: "{{ sidebar_title }}"
+{%- endif %}
+{%- if icon %}
+icon: "{{ icon }}"
+{%- endif %}
+---
+
+## 이런 상황이신가요?
+
+{{ situation }}
+
+---
+
+## VCMS로 이렇게 해결할 수 있어요
+
+{{ solution }}
+
+{% if steps and steps|length > 0 -%}
+---
+
+## 단계별 가이드
+
+<Steps>
+{% for step in steps %}
+  <Step title="{{ step.title }}">
+    {{ step.content }}
+  </Step>
+{% endfor %}
+</Steps>
+
+{% endif -%}
+
+---
+
+## 어떤 숙박업소에 적합한가요?
+
+{{ target }}
+
+---
+
+## 기대 효과
+
+<Check>
+{{ benefit }}
+</Check>
+
+{% if tips and tips|length > 0 -%}
+---
+
+## 운영 팁
+
+<AccordionGroup>
+{% for tip in tips %}
+  <Accordion title="{{ tip.title }}">
+    {{ tip.content }}
+  </Accordion>
+{% endfor %}
+</AccordionGroup>
+
+{% endif -%}
+
+{% if related_guides and related_guides|length > 0 -%}
+---
+
+## 관련 가이드
+
+<CardGroup cols={2}>
+{% for guide in related_guides %}
+  <Card title="{{ guide.title }}" href="/{{ guide.path }}">
+    {{ guide.description | default('') }}
+  </Card>
+{% endfor %}
+</CardGroup>
+
+{% endif -%}
+
+{% if related_faq and related_faq|length > 0 -%}
+
+<Note>
+  **이런 것도 궁금하신가요?**
+
+{% for faq in related_faq %}
+  - [{{ faq.title }}](/{{ faq.path }})
+{% endfor %}
+</Note>
+{% endif -%}
