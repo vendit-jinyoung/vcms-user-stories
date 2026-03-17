@@ -24,6 +24,10 @@ data/
 *.swp
 *.swo
 
+# Archive (v1 content backup)
+_archive/
+
 # Sisyphus / Claude
 .sisyphus/
 .claude/
+_data/
