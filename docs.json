@@ -27,7 +27,6 @@
                   "ko/vcms-usage/index",
                   {
                     "group": "요금 운영",
-                    "icon": "won-sign",
                     "expanded": true,
                     "pages": [
                       "ko/vcms-usage/channel-rate-markup",
@@ -37,7 +36,6 @@
                   },
                   {
                     "group": "재고 운영",
-                    "icon": "boxes-stacked",
                     "expanded": true,
                     "pages": [
                       "ko/vcms-usage/stop-sell-and-reopen",
@@ -47,7 +45,6 @@
                   },
                   {
                     "group": "상품/객실 설정",
-                    "icon": "bed",
                     "expanded": true,
                     "pages": [
                       "ko/vcms-usage/room-type-mapping",
@@ -57,7 +54,6 @@
                   },
                   {
                     "group": "채널 연동/관리",
-                    "icon": "link",
                     "expanded": true,
                     "pages": [
                       "ko/vcms-usage/channel-connect-basics",
@@ -78,7 +74,6 @@
                   "ko/channels/index",
                   {
                     "group": "야놀자",
-                    "icon": "building",
                     "expanded": true,
                     "pages": [
                       "ko/channels/yanolja/sync-and-inventory",
@@ -88,7 +83,6 @@
                   },
                   {
                     "group": "네이버",
-                    "icon": "magnifying-glass",
                     "expanded": true,
                     "pages": [
                       "ko/channels/naver/auth-and-calendar",
@@ -97,7 +91,6 @@
                   },
                   {
                     "group": "여기어때",
-                    "icon": "hotel",
                     "expanded": true,
                     "pages": [
                       "ko/channels/yeogiottae/account-and-sync"
@@ -105,7 +98,6 @@
                   },
                   {
                     "group": "아고다",
-                    "icon": "earth-asia",
                     "expanded": true,
                     "pages": [
                       "ko/channels/agoda/net-rate-structure",
@@ -114,7 +106,6 @@
                   },
                   {
                     "group": "트립닷컴",
-                    "icon": "plane",
                     "expanded": true,
                     "pages": [
                       "ko/channels/tripdotcom/overview"
@@ -122,7 +113,6 @@
                   },
                   {
                     "group": "떠나요닷컴",
-                    "icon": "map",
                     "expanded": true,
                     "pages": [
                       "ko/channels/ddnayo/overview"
@@ -130,7 +120,6 @@
                   },
                   {
                     "group": "온다 펜션플러스",
-                    "icon": "house",
                     "expanded": true,
                     "pages": [
                       "ko/channels/onda/overview"
@@ -138,7 +127,6 @@
                   },
                   {
                     "group": "준비 중인 채널",
-                    "icon": "clock",
                     "expanded": false,
                     "pages": [
                       "ko/channels/bookingdotcom/under-construction",
