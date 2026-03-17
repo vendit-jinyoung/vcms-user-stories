@@ -39,7 +39,7 @@
               },
               {
                 "group": "재고/객실 가용성 관리",
-                "expanded": false,
+                "expanded": true,
                 "pages": [
                   "ko/use-cases/inventory-management/channel-inventory-sync",
                   "ko/use-cases/inventory-management/room-close-open-automation"
@@ -47,7 +47,7 @@
               },
               {
                 "group": "채널 통합 관리",
-                "expanded": false,
+                "expanded": true,
                 "pages": [
                   "ko/use-cases/channel-management/multi-channel-integration",
                   "ko/use-cases/channel-management/channel-product-visibility"
@@ -55,7 +55,7 @@
               },
               {
                 "group": "예약 관리",
-                "expanded": false,
+                "expanded": true,
                 "pages": [
                   "ko/use-cases/reservation-management/reservation-change-cancel",
                   "ko/use-cases/reservation-management/multi-night-group-booking"
@@ -63,7 +63,7 @@
               },
               {
                 "group": "객실 타입/상품 설정",
-                "expanded": false,
+                "expanded": true,
                 "pages": [
                   "ko/use-cases/room-product-config/room-type-pricing-strategy",
                   "ko/use-cases/room-product-config/package-product-management"
@@ -71,14 +71,14 @@
               },
               {
                 "group": "운영 자동화/효율화",
-                "expanded": false,
+                "expanded": true,
                 "pages": [
                   "ko/use-cases/operations-automation/night-unmanned-operations"
                 ]
               },
               {
                 "group": "대실/입퇴실 시간 관리",
-                "expanded": false,
+                "expanded": true,
                 "pages": [
                   "ko/use-cases/dayuse-checkin-time/dayuse-optimization",
                   "ko/use-cases/dayuse-checkin-time/flexible-checkin-checkout"
@@ -86,14 +86,14 @@
               },
               {
                 "group": "특정 채널 운영",
-                "expanded": false,
+                "expanded": true,
                 "pages": [
                   "ko/use-cases/specific-channel-ops/naver-yanolja-tips"
                 ]
               },
               {
                 "group": "프로모션/특가 운영",
-                "expanded": false,
+                "expanded": true,
                 "pages": [
                   "ko/use-cases/promotions-special-offers/seasonal-promotion-ops",
                   "ko/use-cases/promotions-special-offers/walk-in-special-deals"
@@ -101,14 +101,14 @@
               },
               {
                 "group": "수기/직접 예약 관리",
-                "expanded": false,
+                "expanded": true,
                 "pages": [
                   "ko/use-cases/manual-direct-booking/manual-booking-inventory-sync"
                 ]
               },
               {
                 "group": "온보딩/시스템 설정",
-                "expanded": false,
+                "expanded": true,
                 "pages": [
                   "ko/use-cases/onboarding-setup/vcms-initial-setup",
                   "ko/use-cases/onboarding-setup/remote-support-troubleshooting"
@@ -116,14 +116,14 @@
               },
               {
                 "group": "오버부킹 방지/처리",
-                "expanded": false,
+                "expanded": true,
                 "pages": [
                   "ko/use-cases/overbooking-prevention/overbooking-prevention-setup"
                 ]
               },
               {
                 "group": "다지점/사용자 관리",
-                "expanded": false,
+                "expanded": true,
                 "pages": [
                   "ko/use-cases/multi-property-accounts/multi-property-management"
                 ]
@@ -149,70 +149,70 @@
               },
               {
                 "group": "재고/객실 가용성 관리",
-                "expanded": false,
+                "expanded": true,
                 "pages": [
                   "ko/stories/inventory-management/overbooking-and-sync-story"
                 ]
               },
               {
                 "group": "채널 통합 관리",
-                "expanded": false,
+                "expanded": true,
                 "pages": [
                   "ko/stories/channel-management/spreadsheet-to-hub-story"
                 ]
               },
               {
                 "group": "예약 관리",
-                "expanded": false,
+                "expanded": true,
                 "pages": [
                   "ko/stories/reservation-management/change-cancel-chaos-story"
                 ]
               },
               {
                 "group": "객실 타입/상품 설정",
-                "expanded": false,
+                "expanded": true,
                 "pages": [
                   "ko/stories/room-product-config/package-and-mapping-story"
                 ]
               },
               {
                 "group": "운영 자동화/효율화",
-                "expanded": false,
+                "expanded": true,
                 "pages": [
                   "ko/stories/operations-automation/night-operations-story"
                 ]
               },
               {
                 "group": "대실/입퇴실 시간 관리",
-                "expanded": false,
+                "expanded": true,
                 "pages": [
                   "ko/stories/dayuse-checkin-time/motel-dayuse-story"
                 ]
               },
               {
                 "group": "특정 채널 운영",
-                "expanded": false,
+                "expanded": true,
                 "pages": [
                   "ko/stories/specific-channel-ops/channel-quirks-story"
                 ]
               },
               {
                 "group": "프로모션/특가 운영",
-                "expanded": false,
+                "expanded": true,
                 "pages": [
                   "ko/stories/promotions-special-offers/promo-timing-story"
                 ]
               },
               {
                 "group": "수기/직접 예약 관리",
-                "expanded": false,
+                "expanded": true,
                 "pages": [
                   "ko/stories/manual-direct-booking/vcloud-manual-booking-story"
                 ]
               },
               {
                 "group": "온보딩/시스템 설정",
-                "expanded": false,
+                "expanded": true,
                 "pages": [
                   "ko/stories/onboarding-setup/first-30-days-story",
                   "ko/stories/onboarding-setup/why-setup-feels-hard-story"
@@ -220,14 +220,14 @@
               },
               {
                 "group": "오버부킹 방지/처리",
-                "expanded": false,
+                "expanded": true,
                 "pages": [
                   "ko/stories/overbooking-prevention/overbooking-collapse-story"
                 ]
               },
               {
                 "group": "다지점/사용자 관리",
-                "expanded": false,
+                "expanded": true,
                 "pages": [
                   "ko/stories/multi-property-accounts/owner-manager-frontdesk-story"
                 ]
@@ -235,10 +235,10 @@
             ]
           },
           {
-            "tab": "프로토타입 (QA용)",
+            "tab": "숙박업 채널 관리 파헤치기",
             "groups": [
               {
-                "group": "개요",
+                "group": "전체 글",
                 "expanded": true,
                 "pages": [
                   "ko/stories/prototype-38rooms-spreadsheet",
@@ -249,10 +249,10 @@
             ]
           },
           {
-            "tab": "시리즈 (QA용)",
+            "tab": "숙박 채널 매거진",
             "groups": [
               {
-                "group": "개요",
+                "group": "전체 글",
                 "expanded": true,
                 "pages": [
                   "ko/stories/series-overbooking-episode",
@@ -283,7 +283,7 @@
               },
               {
                 "group": "여기어때",
-                "expanded": false,
+                "expanded": true,
                 "pages": [
                   "ko/channel-notes/yeogiottae/overview",
                   "ko/channel-notes/yeogiottae/account-and-sync"
@@ -291,7 +291,7 @@
               },
               {
                 "group": "네이버",
-                "expanded": false,
+                "expanded": true,
                 "pages": [
                   "ko/channel-notes/naver/overview",
                   "ko/channel-notes/naver/login-and-calendar",
@@ -300,7 +300,7 @@
               },
               {
                 "group": "아고다",
-                "expanded": false,
+                "expanded": true,
                 "pages": [
                   "ko/channel-notes/agoda/overview",
                   "ko/channel-notes/agoda/pricing-and-ycs",
@@ -309,28 +309,28 @@
               },
               {
                 "group": "트립닷컴",
-                "expanded": false,
+                "expanded": true,
                 "pages": [
                   "ko/channel-notes/tripdotcom/overview"
                 ]
               },
               {
                 "group": "떠나요",
-                "expanded": false,
+                "expanded": true,
                 "pages": [
                   "ko/channel-notes/ddnayodotcom/overview"
                 ]
               },
               {
                 "group": "온다 펜션플러스",
-                "expanded": false,
+                "expanded": true,
                 "pages": [
                   "ko/channel-notes/onda-pension-plus/overview"
                 ]
               },
               {
                 "group": "준비 중인 채널",
-                "expanded": false,
+                "expanded": true,
                 "pages": [
                   "ko/channel-notes/bookingdotcom/under-construction",
                   "ko/channel-notes/expedia/under-construction",
