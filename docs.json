@@ -157,6 +157,15 @@
                 ]
               },
               {
+                "group": "시리즈: 숙소 운영의 민낯 (QA용)",
+                "expanded": true,
+                "pages": [
+                  "ko/stories/series-overbooking-episode",
+                  "ko/stories/series-pricing-strategy-episode",
+                  "ko/stories/series-channel-personality-episode"
+                ]
+              },
+              {
                 "group": "요금/가격 관리",
                 "expanded": true,
                 "pages": [
