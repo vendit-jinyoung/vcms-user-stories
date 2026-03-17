@@ -1,0 +1,67 @@
+/* ===========================================================
+   VENDIT 브랜드 컬러 (Light + Dark 공통 변수)
+   =========================================================== */
+:root {
+  --vendit-purple: #5D21D4;
+  --vendit-purple-bg: #F4ECFF;
+  --vendit-purple-active-bg: #EDE4FF;
+}
+
+/* ===========================================================
+   1) 링크 Hover / Active — 강제 보라색
+   =========================================================== */
+.mint-navigation-item > .mint-link:hover {
+  background-color: var(--vendit-purple-bg) !important;
+  color: var(--vendit-purple) !important;
+}
+
+.mint-navigation-item > .mint-link.active,
+.mint-navigation-item > .mint-link.active * {
+  background-color: var(--vendit-purple-active-bg) !important;
+  color: var(--vendit-purple) !important;
+  font-weight: 600 !important;
+}
+
+.mint-navigation-item > .mint-link {
+  border-radius: 8px !important;
+  padding: 10px 14px !important;
+  transition: all 0.15s ease;
+}
+
+/* ===========================================================
+   2) 그룹 타이틀 보라색
+   =========================================================== */
+.mint-nav-group-title {
+  color: var(--vendit-purple) !important;
+  font-weight: 700 !important;
+}
+
+/* ===========================================================
+   3) 사이드바 그룹 — 기본 열림 (expanded)
+   =========================================================== */
+
+/* expanded=true인 그룹은 항상 열림 */
+.mint-nav-group[data-expanded="true"] .mint-nav-group-items {
+  max-height: 2000px !important;
+  overflow: visible !important;
+  opacity: 1 !important;
+}
+
+/* ===========================================================
+   4) 다크 모드
+   =========================================================== */
+@media (prefers-color-scheme: dark) {
+  .mint-navigation-item > .mint-link:hover {
+    background-color: #2E225E !important;
+    color: #D6C7FF !important;
+  }
+
+  .mint-navigation-item > .mint-link.active {
+    background-color: #3A2A66 !important;
+    color: #E6DEFF !important;
+  }
+
+  .mint-nav-group-title {
+    color: #D6C7FF !important;
+  }
+}
