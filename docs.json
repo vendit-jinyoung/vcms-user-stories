@@ -31,7 +31,8 @@
                     "pages": [
                       "ko/vcms-usage/channel-rate-markup",
                       "ko/vcms-usage/seasonal-rate-setup",
-                      "ko/vcms-usage/dayuse-rate-config"
+                      "ko/vcms-usage/dayuse-rate-config",
+                      "ko/vcms-usage/promotion-management"
                     ]
                   },
                   {
@@ -40,7 +41,9 @@
                     "pages": [
                       "ko/vcms-usage/stop-sell-and-reopen",
                       "ko/vcms-usage/auto-replenish",
-                      "ko/vcms-usage/max-inventory-cap"
+                      "ko/vcms-usage/max-inventory-cap",
+                      "ko/vcms-usage/walk-in-booking",
+                      "ko/vcms-usage/overbooking-response"
                     ]
                   },
                   {
@@ -58,7 +61,8 @@
                     "pages": [
                       "ko/vcms-usage/channel-connect-basics",
                       "ko/vcms-usage/sales-period-config",
-                      "ko/vcms-usage/multi-property-permissions"
+                      "ko/vcms-usage/multi-property-permissions",
+                      "ko/vcms-usage/onboarding-guide"
                     ]
                   }
                 ]
@@ -73,12 +77,12 @@
                 "pages": [
                   "ko/channels/index",
                   {
-                    "group": "야놀자",
+                    "group": "여기어때",
                     "expanded": true,
                     "pages": [
-                      "ko/channels/yanolja/sync-and-inventory",
-                      "ko/channels/yanolja/category-and-account",
-                      "ko/channels/yanolja/pricing-quirks"
+                      "ko/channels/yeogiottae/account-and-sync",
+                      "ko/channels/yeogiottae/sajangnim-vs-partner",
+                      "ko/channels/yeogiottae/pricing-and-fees"
                     ]
                   },
                   {
@@ -87,13 +91,6 @@
                     "pages": [
                       "ko/channels/naver/auth-and-calendar",
                       "ko/channels/naver/pricing-and-direct-contract"
-                    ]
-                  },
-                  {
-                    "group": "여기어때",
-                    "expanded": true,
-                    "pages": [
-                      "ko/channels/yeogiottae/account-and-sync"
                     ]
                   },
                   {
@@ -112,6 +109,22 @@
                     ]
                   },
                   {
+                    "group": "야놀자",
+                    "expanded": true,
+                    "pages": [
+                      "ko/channels/yanolja/sync-and-inventory",
+                      "ko/channels/yanolja/category-and-account",
+                      "ko/channels/yanolja/pricing-quirks"
+                    ]
+                  },
+                  {
+                    "group": "온다 플러스",
+                    "expanded": true,
+                    "pages": [
+                      "ko/channels/onda/overview"
+                    ]
+                  },
+                  {
                     "group": "떠나요닷컴",
                     "expanded": true,
                     "pages": [
@@ -119,10 +132,10 @@
                     ]
                   },
                   {
-                    "group": "온다 펜션플러스",
+                    "group": "꿀스테이",
                     "expanded": true,
                     "pages": [
-                      "ko/channels/onda/overview"
+                      "ko/channels/kkulstay/overview"
                     ]
                   },
                   {
@@ -150,7 +163,9 @@
                   "ko/magazine/password-chaos",
                   "ko/magazine/spreadsheet-to-system",
                   "ko/magazine/peak-season-war",
-                  "ko/magazine/midnight-operations"
+                  "ko/magazine/midnight-operations",
+                  "ko/magazine/dayuse-art",
+                  "ko/magazine/before-channel-manager"
                 ]
               }
             ]
