@@ -37,18 +37,7 @@
 }
 
 /* ===========================================================
-   3) 사이드바 그룹 — 기본 열림 (expanded)
-   =========================================================== */
-
-/* expanded=true인 그룹은 항상 열림 */
-.mint-nav-group[data-expanded="true"] .mint-nav-group-items {
-  max-height: 2000px !important;
-  overflow: visible !important;
-  opacity: 1 !important;
-}
-
-/* ===========================================================
-   4) 다크 모드
+   3) 다크 모드
    =========================================================== */
 @media (prefers-color-scheme: dark) {
   .mint-navigation-item > .mint-link:hover {
@@ -66,23 +55,4 @@
   }
 }
 
-/* ===========================================================
-   5) 강제 언폴드 — Mintlify 기본 접힘 동작 오버라이드
-   =========================================================== */
 
-/* 모든 그룹 아이템 강제 표시 */
-.mint-nav-group .mint-nav-group-items,
-[class*="nav-group"] [class*="group-items"],
-[class*="NavigationGroup"] [class*="items"] {
-  max-height: 9999px !important;
-  height: auto !important;
-  overflow: visible !important;
-  opacity: 1 !important;
-  display: block !important;
-  visibility: visible !important;
-}
-
-/* 접힘 애니메이션 비활성화 */
-.mint-nav-group .mint-nav-group-items {
-  transition: none !important;
-}
