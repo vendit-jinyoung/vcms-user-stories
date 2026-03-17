@@ -160,6 +160,13 @@
                     ]
                   },
                   {
+                    "group": "트립비토즈",
+                    "expanded": true,
+                    "pages": [
+                      "ko/channels/tripbtoz/overview"
+                    ]
+                  },
+                  {
                     "group": "준비 중인 채널",
                     "expanded": false,
                     "pages": [
