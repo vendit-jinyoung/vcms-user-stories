@@ -141,24 +141,6 @@
                 ]
               },
               {
-                "group": "프로토타입 (QA용)",
-                "expanded": true,
-                "pages": [
-                  "ko/stories/prototype-38rooms-spreadsheet",
-                  "ko/stories/prototype-agoda-48000won",
-                  "ko/stories/prototype-7000won-accident"
-                ]
-              },
-              {
-                "group": "시리즈: 숙소 운영의 민낯 (QA용)",
-                "expanded": true,
-                "pages": [
-                  "ko/stories/series-overbooking-episode",
-                  "ko/stories/series-pricing-strategy-episode",
-                  "ko/stories/series-channel-personality-episode"
-                ]
-              },
-              {
                 "group": "요금 관리",
                 "expanded": true,
                 "pages": [
@@ -248,6 +230,34 @@
                 "expanded": false,
                 "pages": [
                   "ko/stories/multi-property-accounts/owner-manager-frontdesk-story"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "프로토타입 (QA용)",
+            "groups": [
+              {
+                "group": "개요",
+                "expanded": true,
+                "pages": [
+                  "ko/stories/prototype-38rooms-spreadsheet",
+                  "ko/stories/prototype-agoda-48000won",
+                  "ko/stories/prototype-7000won-accident"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "시리즈 (QA용)",
+            "groups": [
+              {
+                "group": "개요",
+                "expanded": true,
+                "pages": [
+                  "ko/stories/series-overbooking-episode",
+                  "ko/stories/series-pricing-strategy-episode",
+                  "ko/stories/series-channel-personality-episode"
                 ]
               }
             ]
