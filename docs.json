@@ -29,7 +29,7 @@
                 ]
               },
               {
-                "group": "요금/가격 관리",
+                "group": "요금 관리",
                 "expanded": true,
                 "pages": [
                   "ko/use-cases/pricing-management/seasonal-pricing",
@@ -127,13 +127,6 @@
                 "pages": [
                   "ko/use-cases/multi-property-accounts/multi-property-management"
                 ]
-              },
-              {
-                "group": "정산/매출 리포트",
-                "expanded": false,
-                "pages": [
-                  "ko/use-cases/settlement-reports/channel-settlement-reports"
-                ]
               }
             ]
           },
@@ -166,7 +159,7 @@
                 ]
               },
               {
-                "group": "요금/가격 관리",
+                "group": "요금 관리",
                 "expanded": true,
                 "pages": [
                   "ko/stories/pricing-management/property-type-seasonality-story"
@@ -255,13 +248,6 @@
                 "expanded": false,
                 "pages": [
                   "ko/stories/multi-property-accounts/owner-manager-frontdesk-story"
-                ]
-              },
-              {
-                "group": "정산/매출 리포트",
-                "expanded": false,
-                "pages": [
-                  "ko/stories/settlement-reports/margin-visibility-story"
                 ]
               }
             ]
