@@ -148,6 +148,15 @@
                 ]
               },
               {
+                "group": "프로토타입 (QA용)",
+                "expanded": true,
+                "pages": [
+                  "ko/stories/prototype-38rooms-spreadsheet",
+                  "ko/stories/prototype-agoda-48000won",
+                  "ko/stories/prototype-7000won-accident"
+                ]
+              },
+              {
                 "group": "요금/가격 관리",
                 "expanded": true,
                 "pages": [
