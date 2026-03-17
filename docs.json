@@ -32,7 +32,10 @@
                       "ko/vcms-usage/channel-rate-markup",
                       "ko/vcms-usage/seasonal-rate-setup",
                       "ko/vcms-usage/dayuse-rate-config",
-                      "ko/vcms-usage/promotion-management"
+                      "ko/vcms-usage/promotion-management",
+                      "ko/vcms-usage/bulk-rate-adjustment",
+                      "ko/vcms-usage/seasonal-promotion-ops",
+                      "ko/vcms-usage/walk-in-special-deals"
                     ]
                   },
                   {
@@ -43,7 +46,13 @@
                       "ko/vcms-usage/auto-replenish",
                       "ko/vcms-usage/max-inventory-cap",
                       "ko/vcms-usage/walk-in-booking",
-                      "ko/vcms-usage/overbooking-response"
+                      "ko/vcms-usage/overbooking-response",
+                      "ko/vcms-usage/channel-inventory-sync",
+                      "ko/vcms-usage/room-close-open-automation",
+                      "ko/vcms-usage/manual-booking-inventory-sync",
+                      "ko/vcms-usage/reservation-change-cancel",
+                      "ko/vcms-usage/multi-night-group-booking",
+                      "ko/vcms-usage/overbooking-prevention-setup"
                     ]
                   },
                   {
@@ -52,7 +61,10 @@
                     "pages": [
                       "ko/vcms-usage/room-type-mapping",
                       "ko/vcms-usage/package-product-setup",
-                      "ko/vcms-usage/checkin-checkout-time"
+                      "ko/vcms-usage/checkin-checkout-time",
+                      "ko/vcms-usage/room-type-pricing-strategy",
+                      "ko/vcms-usage/flexible-checkin-checkout",
+                      "ko/vcms-usage/dayuse-optimization"
                     ]
                   },
                   {
@@ -62,7 +74,16 @@
                       "ko/vcms-usage/channel-connect-basics",
                       "ko/vcms-usage/sales-period-config",
                       "ko/vcms-usage/multi-property-permissions",
-                      "ko/vcms-usage/onboarding-guide"
+                      "ko/vcms-usage/onboarding-guide",
+                      "ko/vcms-usage/multi-channel-integration",
+                      "ko/vcms-usage/auto-message-system"
+                    ]
+                  },
+                  {
+                    "group": "운영 자동화",
+                    "expanded": true,
+                    "pages": [
+                      "ko/vcms-usage/night-unmanned-operations"
                     ]
                   }
                 ]
