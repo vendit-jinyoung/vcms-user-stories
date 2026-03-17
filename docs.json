@@ -334,12 +334,7 @@
     ]
   },
   "navbar": {
-    "links": [
-      {
-        "label": "GitHub",
-        "href": "https://github.com/vendit-jinyoung/vcms-user-stories"
-      }
-    ]
+    "links": []
   },
   "footer": {
     "socials": {
