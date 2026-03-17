@@ -265,6 +265,83 @@
                 ]
               }
             ]
+          },
+          {
+            "tab": "채널별 특이사항",
+            "groups": [
+              {
+                "group": "개요",
+                "expanded": true,
+                "pages": [
+                  "ko/channel-notes/index"
+                ]
+              },
+              {
+                "group": "야놀자",
+                "expanded": true,
+                "pages": [
+                  "ko/channel-notes/yanolja/overview",
+                  "ko/channel-notes/yanolja/pricing-and-inventory",
+                  "ko/channel-notes/yanolja/account-and-category"
+                ]
+              },
+              {
+                "group": "여기어때",
+                "expanded": false,
+                "pages": [
+                  "ko/channel-notes/yeogiottae/overview",
+                  "ko/channel-notes/yeogiottae/account-and-sync"
+                ]
+              },
+              {
+                "group": "네이버",
+                "expanded": false,
+                "pages": [
+                  "ko/channel-notes/naver/overview",
+                  "ko/channel-notes/naver/login-and-calendar",
+                  "ko/channel-notes/naver/pricing-and-direct-contract"
+                ]
+              },
+              {
+                "group": "아고다",
+                "expanded": false,
+                "pages": [
+                  "ko/channel-notes/agoda/overview",
+                  "ko/channel-notes/agoda/pricing-and-ycs",
+                  "ko/channel-notes/agoda/promotion-and-settlement"
+                ]
+              },
+              {
+                "group": "트립닷컴",
+                "expanded": false,
+                "pages": [
+                  "ko/channel-notes/tripdotcom/overview"
+                ]
+              },
+              {
+                "group": "떠나요",
+                "expanded": false,
+                "pages": [
+                  "ko/channel-notes/ddnayodotcom/overview"
+                ]
+              },
+              {
+                "group": "온다 펜션플러스",
+                "expanded": false,
+                "pages": [
+                  "ko/channel-notes/onda-pension-plus/overview"
+                ]
+              },
+              {
+                "group": "준비 중인 채널",
+                "expanded": false,
+                "pages": [
+                  "ko/channel-notes/bookingdotcom/under-construction",
+                  "ko/channel-notes/expedia/under-construction",
+                  "ko/channel-notes/airbnb/under-construction"
+                ]
+              }
+            ]
           }
         ]
       }

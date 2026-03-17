@@ -1,0 +1,102 @@
+---
+title: "채널별 운영 노트"
+description: "반복되는 현장 패턴에서 도출한 채널별 운영 참고사항"
+---
+
+# 채널별 운영 노트
+
+이 섹션은 실제 업장 운영 통화에서 반복적으로 확인된 채널별 운영 패턴과 주의사항을 정리한 내부 참고 문서입니다.
+
+일반적인 채널 연동 가이드가 아니라, **현장에서 자주 막히는 지점**, **설정 누락으로 인한 장애**, **채널 고유의 동작 방식에서 오는 혼란** 등을 채널 단위로 분류한 것입니다.
+
+## 이 문서의 용도
+
+- 온보딩/교육 시 채널별로 먼저 짚어야 할 포인트 파악
+- 장애 접수 시 채널별 빈출 원인 빠르게 확인
+- 업장이 직접 설정을 변경한 뒤 발생하는 문제의 원인 추적
+
+---
+
+## 현재 연동 가능한 채널
+
+아래 채널들은 VCMS와 정상 연동 중이며, 각 채널에 대한 상세 운영 노트가 있습니다.
+
+<CardGroup cols={2}>
+  <Card title="야놀자" icon="building" href="/ko/channel-notes/yanolja/overview">
+    호텔/모텔 카테고리 차이, 재고 차단 이슈, 프로모션 매핑, 가격 되돌림 등 가장 높은 밀도의 운영 이슈가 집중된 채널
+  </Card>
+  <Card title="여기어때" icon="hotel" href="/ko/channel-notes/yeogiottae/overview">
+    동시 로그인 튕김, 시즌/시간 설정 다양성, 저장 실패와 반영 지연, 계정 운영 충돌이 반복되는 채널
+  </Card>
+  <Card title="네이버" icon="magnifying-glass" href="/ko/channel-notes/naver/overview">
+    2FA/앱비밀번호 인증 복잡성, 공휴일/오늘의 딜 덮어쓰기, 낮은 수수료 대비 높은 관리 복잡도가 특징인 채널
+  </Card>
+</CardGroup>
+
+아래 채널들도 VCMS 연동이 가능하지만, 이 문서에서는 별도 상세 페이지를 제공하지 않습니다.
+
+| 채널 | 비고 |
+|------|------|
+| 아고다 | YCS 기반 공식 연동. 입금가(net rate) 전용, 수수료 구조 복잡. 별도 문서 예정 |
+| 트립닷컴 | 공식 연동. 기존 예약 미반영, 취소 내역 수동 관리 필요 |
+| 떠나요 | 리피터 기반 연동. PC 상시 가동 필요, 연박 분할 이슈 |
+| 온다 | 펜션플러스 연동. 가격 상한선 제약, 0원 표시 위험 |
+
+---
+
+## 현재 연동되지 않는 채널
+
+<Warning>
+  아래 채널들은 2026년 3월 현재 VCMS와 **정상 연동이 되지 않습니다**. 예약 연동, 재고/요금 동기화 모두 불가능한 상태입니다.
+</Warning>
+
+| 채널 | 상태 |
+|------|------|
+| **부킹닷컴** | 미연동. 과거 비공식 연동 시도 이력 있으나 현재 불가 |
+| **익스피디아** | 미연동. 플랫폼 측 협조 부족으로 연동 지연 중 |
+| **에어비앤비** | 미연동. 보안 정책(퍼즐, 2FA)으로 안정적 연동 불가 |
+
+이 세 채널을 주요 판매 채널로 사용하는 업장의 경우, VCMS를 통한 재고/요금 통합 관리에 제약이 있으므로 수동 관리가 필요합니다. 부킹닷컴/익스피디아 예약은 VCMS에 수기 등록하여 재고를 차감하는 방식으로 운영해야 합니다.
+
+---
+
+## 채널 노트 상세 목록
+
+### 야놀자
+
+<CardGroup cols={2}>
+  <Card title="야놀자 개요" href="/ko/channel-notes/yanolja/overview">
+    채널 특성, 반복 패턴, 먼저 확인할 것
+  </Card>
+  <Card title="요금 및 재고" href="/ko/channel-notes/yanolja/pricing-and-inventory">
+    가격 되돌림, 재고 차단, 동기화 지연, 판매 기간 제한
+  </Card>
+  <Card title="계정 및 카테고리" href="/ko/channel-notes/yanolja/account-and-category">
+    호텔/모텔 카테고리 차이, 펜션 특수성, 프로모션 매핑, 연동 차단
+  </Card>
+</CardGroup>
+
+### 여기어때
+
+<CardGroup cols={2}>
+  <Card title="여기어때 개요" href="/ko/channel-notes/yeogiottae/overview">
+    채널 특성, 반복 패턴, 먼저 확인할 것
+  </Card>
+  <Card title="계정 및 동기화" href="/ko/channel-notes/yeogiottae/account-and-sync">
+    동시 로그인, 시즌 설정, 반영 지연, 매핑 오류
+  </Card>
+</CardGroup>
+
+### 네이버
+
+<CardGroup cols={2}>
+  <Card title="네이버 개요" href="/ko/channel-notes/naver/overview">
+    채널 특성, 반복 패턴, 먼저 확인할 것
+  </Card>
+  <Card title="로그인 및 캘린더" href="/ko/channel-notes/naver/login-and-calendar">
+    2FA, 앱비밀번호, 보호조치, 공휴일/오늘의 딜 초기화
+  </Card>
+  <Card title="요금 및 직계약" href="/ko/channel-notes/naver/pricing-and-direct-contract">
+    수수료 구조, 직계약 운영, 수동 관리 피로
+  </Card>
+</CardGroup>
