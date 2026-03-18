@@ -76,7 +76,9 @@
                       "ko/vcms-usage/multi-property-permissions",
                       "ko/vcms-usage/onboarding-guide",
                       "ko/vcms-usage/multi-channel-integration",
-                      "ko/vcms-usage/auto-message-system"
+                      "ko/vcms-usage/auto-message-system",
+                      "ko/vcms-usage/channel-sync-failure",
+                      "ko/vcms-usage/onboarding-education"
                     ]
                   },
                   {
@@ -126,7 +128,8 @@
                     "group": "트립닷컴",
                     "expanded": true,
                     "pages": [
-                      "ko/channels/tripdotcom/overview"
+                      "ko/channels/tripdotcom/overview",
+                      "ko/channels/tripdotcom/agoda-mapping"
                     ]
                   },
                   {
@@ -149,7 +152,8 @@
                     "group": "떠나요닷컴",
                     "expanded": true,
                     "pages": [
-                      "ko/channels/ddnayo/overview"
+                      "ko/channels/ddnayo/overview",
+                      "ko/channels/ddnayo/repeater-setup"
                     ]
                   },
                   {

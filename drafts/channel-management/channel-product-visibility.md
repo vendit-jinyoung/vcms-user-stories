@@ -2,6 +2,11 @@
 title: "채널별 상품 노출 관리"
 description: "특정 채널에서만 상품을 판매하거나, 불필요한 채널의 상품을 숨기는 방법"
 sidebarTitle: "상품 노출 관리"
+source_data:
+  data_source: "voc"
+  category: "채널 통합 관리"
+  category_slug: "channel-management"
+  source_count: 2
 ---
 
 ## 이런 상황이신가요?

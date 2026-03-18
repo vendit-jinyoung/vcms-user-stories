@@ -2,6 +2,11 @@
 title: "기간별/시즌별 요금 설정"
 description: "성수기, 비수기, 공휴일, 요일별 요금을 VCMS에서 체계적으로 관리하는 방법"
 sidebarTitle: "시즌별 요금 설정"
+source_data:
+  data_source: "voc"
+  category: "요금/가격 관리"
+  category_slug: "pricing-management"
+  source_count: 108
 ---
 
 ## 이런 상황이신가요?

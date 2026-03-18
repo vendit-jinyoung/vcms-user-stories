@@ -2,6 +2,11 @@
 title: "야간 무인 운영 자동화"
 description: "야간 시간대에 직원 없이도 예약, 재고, 채널 관리가 자동으로 돌아가도록 설정하는 방법"
 sidebarTitle: "야간 무인 운영"
+source_data:
+  data_source: "voc"
+  category: "운영 자동화/효율화"
+  category_slug: "operations-automation"
+  source_count: 22
 ---
 
 ## 이런 상황이신가요?

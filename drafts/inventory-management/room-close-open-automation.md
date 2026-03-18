@@ -2,6 +2,11 @@
 title: "객실 마감/오픈 자동화"
 description: "만실, 수리, 특정 기간 등 상황에 맞게 객실을 자동으로 마감하고 오픈하는 방법"
 sidebarTitle: "객실 마감/오픈"
+source_data:
+  data_source: "voc"
+  category: "재고/객실 가용성 관리"
+  category_slug: "inventory-management"
+  source_count: 9
 ---
 
 ## 이런 상황이신가요?

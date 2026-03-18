@@ -2,6 +2,11 @@
 title: "시즌 프로모션 운영"
 description: "성수기/비수기에 맞춘 프로모션 상품을 VCMS에서 설정하고 채널별로 운영하는 방법"
 sidebarTitle: "시즌 프로모션"
+source_data:
+  data_source: "voc"
+  category: "프로모션/특가 운영"
+  category_slug: "promotions-special-offers"
+  source_count: 39
 ---
 
 ## 이런 상황이신가요?

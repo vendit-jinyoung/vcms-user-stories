@@ -27,6 +27,9 @@ data/
 # Archive (v1 content backup)
 _archive/
 
+# Generated outputs
+_slack_themes.json
+
 # Sisyphus / Claude
 .sisyphus/
 .claude/

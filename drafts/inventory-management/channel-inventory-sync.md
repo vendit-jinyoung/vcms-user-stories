@@ -2,6 +2,11 @@
 title: "채널별 재고 연동 관리"
 description: "VCMS로 모든 OTA 채널의 객실 재고를 실시간 동기화하고 채널별 수량을 최적화하는 방법"
 sidebarTitle: "재고 연동 관리"
+source_data:
+  data_source: "voc"
+  category: "재고/객실 가용성 관리"
+  category_slug: "inventory-management"
+  source_count: 172
 ---
 
 ## 이런 상황이신가요?

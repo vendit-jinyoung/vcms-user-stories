@@ -2,7 +2,8 @@
 
 > **생성일**: 2026-03-16
 > **검토자**: Dean
-> **총 초안**: 26개 (16개 카테고리)
+> **총 초안**: 30개 (16개 카테고리)
+> **추가 소스**: Slack 운영 데이터 (system-vcms-noti + public-vcms)
 > **데이터 소스**: VOC 통화녹음 1,414건 → use_case 1,415개 (중복 제거 후)
 
 ---
@@ -68,6 +69,18 @@
 
 ### 정산/매출 리포트 (13건 기반, 1개 초안)
 - [ ] [채널별 정산 리포트 활용](settlement-reports/channel-settlement-reports.md) — 매출/정산 통계
+
+---
+
+### Slack 기반 추가 초안 — 연동/온보딩 (4개)
+
+> **데이터 소스**: Slack `system-vcms-noti` (1,653건) + `public-vcms` (13,351건)
+> **추출 방법**: `scripts/extract_slack_themes.py` → 9개 테마 클러스터링 → 4개 초안 선별
+
+- [ ] [VCMS 온보딩 교육 준비 및 진행 가이드](onboarding-setup/onboarding-education-guide.md) — 교육 예약부터 사후 관리까지
+- [ ] [채널 동기화 장애 발생 시 대응 가이드](channel-management/channel-sync-failure-response.md) — 야놀자 403, 네이버 장애 대응
+- [ ] [떠나요닷컴 리피터 설치 및 운영 주의사항](specific-channel-ops/ddnayo-repeater-guide.md) — 설치 절차, 전용/쉐어드, 장애 대응
+- [ ] [트립닷컴·아고다 연동 시 상품 매핑 주의사항](specific-channel-ops/tripdotcom-agoda-mapping.md) — 인원별 요금, 상품 재사용
 
 ---
 

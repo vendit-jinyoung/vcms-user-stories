@@ -2,6 +2,11 @@
 title: "다지점 숙소 통합 관리"
 description: "여러 숙소를 운영할 때 VCMS로 지점별 권한, 계정, 비용을 분리하여 관리하는 방법"
 sidebarTitle: "다지점 통합 관리"
+source_data:
+  data_source: "voc"
+  category: "다지점/사용자 관리"
+  category_slug: "multi-property-accounts"
+  source_count: 21
 ---
 
 ## 이런 상황이신가요?

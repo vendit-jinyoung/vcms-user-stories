@@ -2,6 +2,11 @@
 title: "PMS 연동으로 객실 관리 효율화"
 description: "VCMS와 PMS를 연동하여 예약 정보, 객실 배정, 고객 관리를 한 곳에서 처리하는 방법"
 sidebarTitle: "PMS 연동 관리"
+source_data:
+  data_source: "voc"
+  category: "PMS/키오스크/하드웨어 연동"
+  category_slug: "pms-kiosk-hardware"
+  source_count: 19
 ---
 
 ## 이런 상황이신가요?

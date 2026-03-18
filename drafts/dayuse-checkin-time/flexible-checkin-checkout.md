@@ -2,6 +2,11 @@
 title: "입퇴실 시간 유연 설정"
 description: "객실 타입별, 상품별로 다른 체크인/체크아웃 시간을 VCMS에서 일괄 관리하는 방법"
 sidebarTitle: "입퇴실 시간 설정"
+source_data:
+  data_source: "voc"
+  category: "대실/입퇴실 시간 관리"
+  category_slug: "dayuse-checkin-time"
+  source_count: 33
 ---
 
 ## 이런 상황이신가요?

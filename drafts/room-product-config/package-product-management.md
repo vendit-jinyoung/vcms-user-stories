@@ -2,6 +2,11 @@
 title: "패키지 상품 구성 및 관리"
 description: "생맥주, 바베큐, 얼리 체크인 등 패키지 상품을 VCMS에서 설정하고 채널에 판매하는 방법"
 sidebarTitle: "패키지 상품 관리"
+source_data:
+  data_source: "voc"
+  category: "객실 타입/상품 설정"
+  category_slug: "room-product-config"
+  source_count: 23
 ---
 
 ## 이런 상황이신가요?

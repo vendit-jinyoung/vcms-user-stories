@@ -2,6 +2,11 @@
 title: "다채널 통합 연동 설정"
 description: "야놀자, 여기어때, 네이버, 아고다 등 여러 OTA 채널을 VCMS 하나로 통합 관리하는 방법"
 sidebarTitle: "다채널 통합 연동"
+source_data:
+  data_source: "voc"
+  category: "채널 통합 관리"
+  category_slug: "channel-management"
+  source_count: 187
 ---
 
 ## 이런 상황이신가요?

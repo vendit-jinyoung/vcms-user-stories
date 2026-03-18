@@ -2,6 +2,11 @@
 title: "오버부킹 방지 설정"
 description: "VCMS 재고 연동으로 채널 간 중복 예약을 원천 방지하는 방법"
 sidebarTitle: "오버부킹 방지"
+source_data:
+  data_source: "voc"
+  category: "오버부킹 방지/처리"
+  category_slug: "overbooking-prevention"
+  source_count: 22
 ---
 
 ## 이런 상황이신가요?

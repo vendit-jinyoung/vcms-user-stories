@@ -2,6 +2,11 @@
 title: "예약 변경 및 취소 처리"
 description: "VCMS에서 예약 변경, 취소, 노쇼 처리를 안전하게 수행하고 재고를 자동 복원하는 방법"
 sidebarTitle: "예약 변경/취소"
+source_data:
+  data_source: "voc"
+  category: "예약 관리"
+  category_slug: "reservation-management"
+  source_count: 16
 ---
 
 ## 이런 상황이신가요?
