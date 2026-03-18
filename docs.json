@@ -26,6 +26,17 @@
                 "pages": [
                   "ko/vcms-usage/index",
                   {
+                    "group": "시작 가이드",
+                    "expanded": true,
+                    "pages": [
+                      "ko/vcms-usage/onboarding-guide",
+                      "ko/vcms-usage/onboarding-education",
+                      "ko/vcms-usage/repeater-setup",
+                      "ko/vcms-usage/channel-connect-basics",
+                      "ko/vcms-usage/channel-sync-failure"
+                    ]
+                  },
+                  {
                     "group": "요금 운영",
                     "expanded": true,
                     "pages": [
@@ -68,18 +79,13 @@
                     ]
                   },
                   {
-                    "group": "채널 연동/관리",
+                    "group": "채널 운영",
                     "expanded": true,
                     "pages": [
-                      "ko/vcms-usage/channel-connect-basics",
+                      "ko/vcms-usage/multi-channel-integration",
                       "ko/vcms-usage/sales-period-config",
                       "ko/vcms-usage/multi-property-permissions",
-                      "ko/vcms-usage/onboarding-guide",
-                      "ko/vcms-usage/multi-channel-integration",
-                      "ko/vcms-usage/auto-message-system",
-                      "ko/vcms-usage/channel-sync-failure",
-                      "ko/vcms-usage/onboarding-education",
-                      "ko/vcms-usage/repeater-setup"
+                      "ko/vcms-usage/auto-message-system"
                     ]
                   },
                   {
