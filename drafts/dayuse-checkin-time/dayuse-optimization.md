@@ -2,6 +2,11 @@
 title: "대실 상품 운영 최적화"
 description: "VCMS에서 대실 상품의 시간대, 요금, 재고를 효율적으로 관리하는 방법"
 sidebarTitle: "대실 운영 최적화"
+source_data:
+  data_source: "voc"
+  category: "대실/입퇴실 시간 관리"
+  category_slug: "dayuse-checkin-time"
+  source_count: 16
 ---
 
 ## 이런 상황이신가요?

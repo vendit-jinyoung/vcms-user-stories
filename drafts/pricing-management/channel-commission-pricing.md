@@ -2,6 +2,11 @@
 title: "채널별 수수료 반영 판매가 관리"
 description: "OTA 채널별 수수료를 고려한 최종 판매가를 VCMS에서 설정하고 정산을 예측하는 방법"
 sidebarTitle: "수수료 반영 판매가"
+source_data:
+  data_source: "voc"
+  category: "요금/가격 관리"
+  category_slug: "pricing-management"
+  source_count: 107
 ---
 
 ## 이런 상황이신가요?

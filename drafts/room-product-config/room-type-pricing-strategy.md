@@ -2,6 +2,11 @@
 title: "객실 타입별 요금 전략 설정"
 description: "VCMS에서 객실 타입별로 차등 요금을 설정하고 채널에 반영하는 방법"
 sidebarTitle: "객실별 요금 전략"
+source_data:
+  data_source: "voc"
+  category: "객실 타입/상품 설정"
+  category_slug: "room-product-config"
+  source_count: 57
 ---
 
 ## 이런 상황이신가요?

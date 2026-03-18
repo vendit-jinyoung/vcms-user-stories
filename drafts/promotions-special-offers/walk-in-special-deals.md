@@ -2,6 +2,11 @@
 title: "도보특가/오픈특가 운영"
 description: "도보특가, 오픈특가 등 당일 할인 상품을 VCMS에서 설정하고 효율적으로 관리하는 방법"
 sidebarTitle: "도보특가/오픈특가"
+source_data:
+  data_source: "voc"
+  category: "프로모션/특가 운영"
+  category_slug: "promotions-special-offers"
+  source_count: 7
 ---
 
 ## 이런 상황이신가요?

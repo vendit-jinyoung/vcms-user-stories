@@ -2,6 +2,11 @@
 title: "예약 확인/안내 자동 메시지 설정"
 description: "예약 확정부터 체크인 안내까지, VCMS 자동 문자 발송으로 고객 커뮤니케이션을 효율화하는 방법"
 sidebarTitle: "자동 메시지 설정"
+source_data:
+  data_source: "voc"
+  category: "고객 커뮤니케이션"
+  category_slug: "customer-communication"
+  source_count: 15
 ---
 
 ## 이런 상황이신가요?

@@ -2,6 +2,11 @@
 title: "전화/현장 예약 등록 및 재고 연동"
 description: "전화, 워크인, 비연동 채널 예약을 VCMS에 등록하고 OTA 재고를 자동으로 차감하는 방법"
 sidebarTitle: "수기 예약 등록"
+source_data:
+  data_source: "voc"
+  category: "수기/직접 예약 관리"
+  category_slug: "manual-direct-booking"
+  source_count: 38
 ---
 
 ## 이런 상황이신가요?

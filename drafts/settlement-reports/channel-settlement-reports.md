@@ -2,6 +2,11 @@
 title: "채널별 정산 리포트 활용"
 description: "VCMS 리포트 기능으로 채널별 매출, 정산 내역, 예약 통계를 한눈에 파악하는 방법"
 sidebarTitle: "정산 리포트"
+source_data:
+  data_source: "voc"
+  category: "정산/매출 리포트"
+  category_slug: "settlement-reports"
+  source_count: 8
 ---
 
 ## 이런 상황이신가요?

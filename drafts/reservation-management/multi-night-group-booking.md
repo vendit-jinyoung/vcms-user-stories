@@ -2,6 +2,11 @@
 title: "연박/단체 예약 관리"
 description: "연박 예약의 객실 배정과 단체 예약의 재고 관리를 VCMS로 효율적으로 처리하는 방법"
 sidebarTitle: "연박/단체 예약"
+source_data:
+  data_source: "voc"
+  category: "예약 관리"
+  category_slug: "reservation-management"
+  source_count: 6
 ---
 
 ## 이런 상황이신가요?

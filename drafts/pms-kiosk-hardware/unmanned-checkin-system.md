@@ -2,6 +2,11 @@
 title: "무인 체크인/체크아웃 시스템 구축"
 description: "키오스크와 VCMS를 연동해 24시간 무인 체크인/체크아웃을 운영하는 방법"
 sidebarTitle: "무인 체크인 구축"
+source_data:
+  data_source: "voc"
+  category: "PMS/키오스크/하드웨어 연동"
+  category_slug: "pms-kiosk-hardware"
+  source_count: 40
 ---
 
 ## 이런 상황이신가요?

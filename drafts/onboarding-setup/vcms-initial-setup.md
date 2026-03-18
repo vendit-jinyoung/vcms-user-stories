@@ -2,6 +2,11 @@
 title: "VCMS 초기 세팅 가이드"
 description: "VCMS 도입 후 객실, 채널, 요금 등 초기 설정을 빠르게 완료하는 방법"
 sidebarTitle: "초기 세팅 가이드"
+source_data:
+  data_source: "voc"
+  category: "온보딩/시스템 설정"
+  category_slug: "onboarding-setup"
+  source_count: 27
 ---
 
 ## 이런 상황이신가요?

@@ -2,6 +2,11 @@
 title: "요금 일괄 조정 및 동기화"
 description: "여러 객실 타입의 요금을 한 번에 변경하고 모든 채널에 동기화하는 방법"
 sidebarTitle: "요금 일괄 조정"
+source_data:
+  data_source: "voc"
+  category: "요금/가격 관리"
+  category_slug: "pricing-management"
+  source_count: 85
 ---
 
 ## 이런 상황이신가요?

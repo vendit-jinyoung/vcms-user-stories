@@ -2,6 +2,11 @@
 title: "네이버/야놀자/여기어때 채널 운영 팁"
 description: "국내 주요 OTA 채널별 특성을 이해하고 VCMS에서 효과적으로 관리하는 방법"
 sidebarTitle: "주요 채널 운영 팁"
+source_data:
+  data_source: "voc"
+  category: "특정 채널 운영"
+  category_slug: "specific-channel-ops"
+  source_count: 31
 ---
 
 ## 이런 상황이신가요?

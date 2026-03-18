@@ -2,6 +2,11 @@
 title: "직원 업무 자동화"
 description: "청소 공지, 점검 지시, 객실 상태 관리 등 직원 업무를 VCMS로 체계화하는 방법"
 sidebarTitle: "직원 업무 자동화"
+source_data:
+  data_source: "voc"
+  category: "운영 자동화/효율화"
+  category_slug: "operations-automation"
+  source_count: 10
 ---
 
 ## 이런 상황이신가요?
