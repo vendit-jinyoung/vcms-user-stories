@@ -96,7 +96,40 @@ VCMS_SLACK_CHANNELS = (
     "lounge-vcms", "lounge-vcms-tf", "public-vcms",
     "public-cx", "system-vcms-noti",
     "알림-고객이슈", "알림-cms가아파요",
+    "system-vcms-bot",  # 콘텐츠 QA 피드백 수집
 )
+
+
+def _detect_signal_source(channel: str) -> str:
+    """Detect signal source from Slack channel name."""
+    if channel == "system-vcms-bot":
+        return "vcms-bot"
+    elif channel in ("system-vcms-noti", "알림-고객이슈", "알림-cms가아파요"):
+        return "system-alert"
+    elif channel == "public-cx":
+        return "cx-team"
+    return "vcms-slack"
+
+
+def _detect_signal_type(text: str) -> str:
+    """Classify signal type from message content."""
+    t = text.lower()
+    # Content error reports
+    if any(kw in t for kw in ("틀린", "오류", "잘못", "수정 요청", "사실과 다", "문서가 잘못")):
+        return "content-error"
+    # Terminology confusion
+    if any(kw in t for kw in ("혼동", "헷갈", "용어", "개념이 다", "뭐가 다른")):
+        return "term-confusion"
+    # Feature gap (undocumented feature or behavior)
+    if any(kw in t for kw in ("문서에 없", "안내가 없", "어디에도 없", "가이드가 없")):
+        return "feature-gap"
+    # Spec change (product update signals)
+    if any(kw in t for kw in ("업데이트", "배포", "신규 기능", "변경 사항", "릴리즈")):
+        return "spec-change"
+    # Onboarding issues
+    if any(kw in t for kw in ("교육", "온보딩", "설명이 부족", "이해를 못")):
+        return "onboarding-issue"
+    return "general"
 
 # Slack message → category keyword mapping
 SLACK_CATEGORY_KEYWORDS: dict[str, list[str]] = {
@@ -147,7 +180,9 @@ CREATE TABLE IF NOT EXISTS slack_signals (
     user_name TEXT,
     text_clean TEXT,
     category_slug TEXT,
-    is_mapped INTEGER DEFAULT 0
+    is_mapped INTEGER DEFAULT 0,
+    signal_source TEXT DEFAULT 'vcms-slack',
+    signal_type TEXT DEFAULT 'general'
 );
 
 -- Published MDX content inventory
@@ -262,10 +297,12 @@ def ingest_slack(conn: sqlite3.Connection) -> int:
         if not text_clean or len(text_clean) < 10:
             continue
         category = classify_slack_message(text_clean.lower())
-        batch.append((ts, date, channel, user_name, text_clean[:500], category, 1 if category else 0))
+        signal_source = _detect_signal_source(channel)
+        signal_type = _detect_signal_type(text_clean)
+        batch.append((ts, date, channel, user_name, text_clean[:500], category, 1 if category else 0, signal_source, signal_type))
 
     conn.executemany(
-        "INSERT INTO slack_signals (ts, date, channel, user_name, text_clean, category_slug, is_mapped) VALUES (?,?,?,?,?,?,?)",
+        "INSERT INTO slack_signals (ts, date, channel, user_name, text_clean, category_slug, is_mapped, signal_source, signal_type) VALUES (?,?,?,?,?,?,?,?,?)",
         batch,
     )
     conn.commit()
