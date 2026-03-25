@@ -31,6 +31,7 @@
                     "pages": [
                       "ko/vcms-usage/onboarding-guide",
                       "ko/vcms-usage/onboarding-education",
+                      "ko/vcms-usage/onboarding-checklist-extended",
                       "ko/vcms-usage/repeater-setup",
                       "ko/vcms-usage/channel-connect-basics",
                       "ko/vcms-usage/channel-sync-failure"
@@ -44,9 +45,13 @@
                       "ko/vcms-usage/seasonal-rate-setup",
                       "ko/vcms-usage/dayuse-rate-config",
                       "ko/vcms-usage/promotion-management",
+                      "ko/vcms-usage/promotion-campaign-ops",
                       "ko/vcms-usage/bulk-rate-adjustment",
                       "ko/vcms-usage/seasonal-promotion-ops",
-                      "ko/vcms-usage/walk-in-special-deals"
+                      "ko/vcms-usage/walk-in-special-deals",
+                      "ko/vcms-usage/pricing-dynamic-adjustment",
+                      "ko/vcms-usage/pricing-minimum-rate-guard",
+                      "ko/vcms-usage/pricing-channel-optimization"
                     ]
                   },
                   {
@@ -61,9 +66,15 @@
                       "ko/vcms-usage/channel-inventory-sync",
                       "ko/vcms-usage/room-close-open-automation",
                       "ko/vcms-usage/manual-booking-inventory-sync",
+                      "ko/vcms-usage/manual-booking-advanced",
                       "ko/vcms-usage/reservation-change-cancel",
                       "ko/vcms-usage/multi-night-group-booking",
-                      "ko/vcms-usage/overbooking-prevention-setup"
+                      "ko/vcms-usage/overbooking-prevention-setup",
+                      "ko/vcms-usage/overbooking-prevention-advanced",
+                      "ko/vcms-usage/overbooking-monitoring",
+                      "ko/vcms-usage/reservation-status-management",
+                      "ko/vcms-usage/reservation-multi-channel-sync",
+                      "ko/vcms-usage/inventory-advanced-scenarios"
                     ]
                   },
                   {
@@ -71,11 +82,14 @@
                     "expanded": true,
                     "pages": [
                       "ko/vcms-usage/room-type-mapping",
+                      "ko/vcms-usage/room-type-advanced-mapping",
                       "ko/vcms-usage/package-product-setup",
+                      "ko/vcms-usage/room-product-bundle-strategy",
                       "ko/vcms-usage/checkin-checkout-time",
                       "ko/vcms-usage/room-type-pricing-strategy",
                       "ko/vcms-usage/flexible-checkin-checkout",
-                      "ko/vcms-usage/dayuse-optimization"
+                      "ko/vcms-usage/dayuse-optimization",
+                      "ko/vcms-usage/dayuse-advanced-ops"
                     ]
                   },
                   {
@@ -84,9 +98,21 @@
                     "pages": [
                       "ko/vcms-usage/multi-channel-integration",
                       "ko/vcms-usage/sales-period-config",
+                      "ko/vcms-usage/channel-troubleshooting",
+                      "ko/vcms-usage/channel-optimization-strategy",
                       "ko/vcms-usage/multi-property-permissions",
+                      "ko/vcms-usage/multi-property-advanced",
                       "ko/vcms-usage/auto-message-system",
+                      "ko/vcms-usage/customer-messaging-advanced",
                       "ko/vcms-usage/night-unmanned-operations"
+                    ]
+                  },
+                  {
+                    "group": "운영 자동화",
+                    "expanded": true,
+                    "pages": [
+                      "ko/vcms-usage/operations-schedule-automation",
+                      "ko/vcms-usage/operations-bulk-efficiency"
                     ]
                   }
                 ]
