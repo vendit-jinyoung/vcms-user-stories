@@ -24,6 +24,10 @@ from pathlib import Path
 from textwrap import dedent
 
 import yaml
+from dotenv import load_dotenv
+
+# ── Env ───────────────────────────────────────────────────────────
+load_dotenv(Path(__file__).resolve().parent.parent / ".env")
 
 # ── Paths ─────────────────────────────────────────────────────────
 ROOT = Path(__file__).resolve().parent.parent
@@ -32,6 +36,23 @@ SPEC_PATH = ROOT / "_data" / "doctrine" / "llms-full.txt"
 KO_DIR = ROOT / "ko"
 
 # ── Load Policy ───────────────────────────────────────────────────
+# ── Slack 알림 (툴툴이 → #system-vcms-bot) ────────────────────────
+def notify_slack(message: str) -> bool:
+    """Post a message to #system-vcms-bot via 툴툴이 bot."""
+    token = os.environ.get("SLACK_BOT_TOKEN")
+    channel = os.environ.get("SLACK_CHANNEL_VCMS_BOT", "C0ANR7EER3P")
+    if not token:
+        return False
+    try:
+        from slack_sdk import WebClient
+        client = WebClient(token=token)
+        client.chat_postMessage(channel=channel, text=message)
+        return True
+    except Exception as e:
+        print(f"  WARN: Slack 알림 실패: {e}", file=sys.stderr)
+        return False
+
+
 def load_policy() -> dict:
     if not POLICY_PATH.exists():
         print(f"ERROR: {POLICY_PATH} not found", file=sys.stderr)
@@ -347,6 +368,14 @@ def cmd_lint(args):
 
     print(f"\n{'═' * 50}")
     print(f"Gate 1 완료: {len(files)}파일 검사, {total_errors} ERROR, {total_warns} WARN")
+
+    if total_errors > 0 or total_warns > 0:
+        notify_slack(
+            f"🔍 *클선생 Gate 1 결과*\n"
+            f"• 검사: {len(files)}파일\n"
+            f"• ❌ ERROR: {total_errors}건\n"
+            f"• ⚠️ WARN: {total_warns}건"
+        )
 
     return 1 if total_errors > 0 else 0
 
