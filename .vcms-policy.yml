@@ -1,0 +1,85 @@
+version: "2026-03"
+spec_source: "https://docs.vcms.io/llms-full.txt"
+local_cache: "_data/doctrine/llms-full.txt"
+
+# ── 용어집 ──────────────────────────────────────
+terminology:
+  rules:
+    - { banned: "가격", preferred: "요금", pattern: "가격[을이의은는도에서와가대로]?" }
+    - { banned: "가격표", preferred: "요금표", pattern: "가격표[를이의은는도에서]?" }
+    - { banned: "최저가", preferred: "최저 요금", pattern: "최저가[를이의은는도에서]?" }
+  exceptions:
+    - { term: "가격", context: "가격 경쟁력", verdict: "ALLOW", reason: "일반 비즈니스 용어" }
+    - { term: "가격", context: "가격 상한선", verdict: "ALLOW", reason: "플랫폼 정책 설명" }
+
+# ── 채널 상태 ────────────────────────────────────
+channels:
+  active:
+    - 야놀자
+    - 여기어때
+    - 네이버
+    - 아고다
+    - 트립닷컴
+    - 떠나요
+    - 온다펜션플러스
+  pending:
+    - 부킹닷컴
+    - 익스피디아
+    - 에어비앤비
+
+# ── 제품 범위 ────────────────────────────────────
+product_scope:
+  is: [채널매니저, 재고관리, 요금관리, 채널연동, 동기화, 판매관리]
+  not: [PMS, 키오스크, SMS, 부킹엔진, 도어락, 객실배정, 청소관리]
+
+# ── 톤 & 금지 표현 ───────────────────────────────
+tone:
+  forbidden:
+    - 문제아
+    - 양아치
+    - 지뢰
+    - 지옥
+    - 최악
+    - 쓰레기
+
+# ── 승격 패턴 카탈로그 (Gate 2 few-shot) ─────────
+promotion_patterns:
+  - name: "Wish-as-Feature"
+    description: "사용자 소망을 제품 기능처럼 단정"
+    bad: "체크아웃이 되면 자동으로 재고가 복원돼요"
+    good: "재고 자동 보충을 설정하면 채널 상품의 잔여 수량이 설정값으로 유지돼요"
+    spec_ref: "/ko/inventory-rate/package-stay"
+
+  - name: "SLA-Fabrication"
+    description: "docs.vcms.io에 없는 성능 수치를 단정"
+    bad: "10초 이내에 모든 채널에 반영돼요"
+    good: "변경사항이 연동 채널에 반영돼요"
+    spec_ref: null
+
+  - name: "Workaround-as-Spec"
+    description: "사용자 우회 방법을 공식 절차처럼 서술"
+    bad: "야놀자 펜션은 수동으로 열어줘야 해요"
+    good: "일부 채널의 카테고리 특성상 수동 조작이 필요할 수 있어요"
+    spec_ref: null
+
+  - name: "Frequency-as-Priority"
+    description: "VOC 빈도를 기능 존재 근거로 사용"
+    bad: "CS에서 가장 많이 문의하는 기능이에요"
+    good: "현장에서 자주 활용되는 설정이에요"
+    spec_ref: null
+
+  - name: "Channel-Generalization"
+    description: "한 채널의 동작을 전체 채널로 일반화"
+    bad: "모든 채널에서 인원별 요금을 지원해요"
+    good: "인원별 요금을 지원하는 채널에서는..."
+    spec_ref: "/ko/inventory-rate/package-stay"
+
+# ── 화이트리스트 (WARN → PASS 확인 완료 건) ─────
+overrides: []
+# 예시:
+# - file: "ko/vcms-usage/some-page.mdx"
+#   claim: "야놀자 펜션은 방 열기/닫기만 가능"
+#   verdict: "ALLOW"
+#   reason: "내부 제품정책서에서 확인됨"
+#   reviewer: "jinyoung"
+#   date: "2026-03-26"
