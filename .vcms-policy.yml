@@ -11,6 +11,11 @@ terminology:
   exceptions:
     - { term: "가격", context: "가격 경쟁력", verdict: "ALLOW", reason: "일반 비즈니스 용어" }
     - { term: "가격", context: "가격 상한선", verdict: "ALLOW", reason: "플랫폼 정책 설명" }
+    - { term: "가격", context: "가격 가치", verdict: "ALLOW", reason: "일반 비즈니스 용어 (price value)" }
+    - { term: "가격", context: "다른 가격이", verdict: "ALLOW", reason: "매거진 에디토리얼 — 아고다 최종 판매가 설명" }
+    - { term: "가격", context: "의도치 않은 가격에", verdict: "ALLOW", reason: "매거진 에디토리얼 — 전환 사고 설명" }
+    - { term: "가격", context: "할인된 가격으로", verdict: "ALLOW", reason: "매거진 에디토리얼 — 요금 오류 시나리오" }
+    - { term: "가격", context: "또 다른 가격이", verdict: "ALLOW", reason: "매거진 에디토리얼 — 공휴일 요금 층위 설명" }
 
 # ── 채널 상태 ────────────────────────────────────
 channels:
