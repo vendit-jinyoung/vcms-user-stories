@@ -80,11 +80,30 @@ promotion_patterns:
     spec_ref: "/ko/inventory-rate/package-stay"
 
 # ── 화이트리스트 (WARN → PASS 확인 완료 건) ─────
-overrides: []
-# 예시:
-# - file: "ko/vcms-usage/some-page.mdx"
-#   claim: "야놀자 펜션은 방 열기/닫기만 가능"
-#   verdict: "ALLOW"
-#   reason: "내부 제품정책서에서 확인됨"
-#   reviewer: "jinyoung"
-#   date: "2026-03-26"
+overrides:
+  # ── 에어비앤비 연동 상태: docs.vcms.io stale ──
+  # docs.vcms.io는 연동 가능이지만, 네이버 로그인 방식 변경으로 실제 사용 불가
+  # 내부정책 변경 확정 시 6개 파일 일괄 수정 필요
+  - files:
+      - "ko/vcms-usage/channel-connect-basics.mdx"
+      - "ko/vcms-usage/onboarding-checklist-extended.mdx"
+      - "ko/vcms-usage/multi-channel-integration.mdx"
+      - "ko/vcms-usage/multi-property-advanced.mdx"
+      - "ko/vcms-usage/customer-messaging-advanced.mdx"
+      - "ko/vcms-usage/channel-optimization-strategy.mdx"
+    claim: "에어비앤비 연동 준비 중 / 비연동 채널"
+    verdict: "ALLOW"
+    reason: "docs.vcms.io stale — 네이버 로그인 방식 변경으로 실제 연동 불가. 내부정책 확정 대기"
+    reviewer: "jinyoung"
+    date: "2026-03-26"
+  # ── 리피터: 내부 운영 도구 ──
+  - files:
+      - "ko/vcms-usage/repeater-setup.mdx"
+      - "ko/vcms-usage/onboarding-guide.mdx"
+      - "ko/vcms-usage/onboarding-education.mdx"
+      - "ko/vcms-usage/channel-connect-basics.mdx"
+    claim: "리피터 프로그램 관련 전체"
+    verdict: "ALLOW"
+    reason: "내부 운영 도구 — docs.vcms.io 공개 스펙 범위 밖"
+    reviewer: "jinyoung"
+    date: "2026-03-26"
