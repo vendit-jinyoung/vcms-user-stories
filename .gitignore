@@ -38,3 +38,6 @@ _data/
 # SQLite WAL files
 *.db-shm
 *.db-wal
+
+# Script output
+docs/story-venue-mapping.csv
