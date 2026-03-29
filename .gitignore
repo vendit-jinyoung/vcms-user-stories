@@ -34,3 +34,7 @@ _slack_themes.json
 .sisyphus/
 .claude/
 _data/
+
+# SQLite WAL files
+*.db-shm
+*.db-wal
