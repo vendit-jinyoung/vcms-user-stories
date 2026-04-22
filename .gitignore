@@ -33,6 +33,7 @@ _slack_themes.json
 # Sisyphus / Claude
 .sisyphus/
 .claude/
+.omc/
 _data/
 
 # SQLite WAL files
