@@ -1,3 +1,5 @@
+> Last updated: 2026-05-06
+
 # vcms-user-stories
 
 VCMS 채널매니저 내부 콘텐츠 사이트. 통화 VOC 데이터와 카카오톡 CS 대화에서 추출한 실제 운영 사례를 Mintlify 기반 문서로 제공한다.
